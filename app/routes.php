@@ -35,5 +35,5 @@ Route::get('/resume', function()
 
 Route::get('/portfolio', function()
 {
-	return "This is my portfolio route";
+	return "This is my portfolio route.";
 });
