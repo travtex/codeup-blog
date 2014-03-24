@@ -18,19 +18,15 @@ Route::get('/', function()
 
 Route::get('/sayhello/{name}', function($name)
 {
-    if ($name == "Travis")
-    {
-        return Redirect::to('/');
-    }
-    else
-    {
-        return "Hello, $name!";
-    }
+    $data = array(
+        'name' => $name
+        );
+    return View::make('my-first-view')->with($data);
 });
 
 Route::get('/resume', function()
 {
-	return "This is my resume route.";
+	return "This is my r&eacute;sum&eacute; route.";
 });
 
 Route::get('/portfolio', function()
