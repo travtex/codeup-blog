@@ -26,12 +26,12 @@ Route::get('/sayhello/{name?}', function($name = 'Travis')
 
 Route::get('/resume', function()
 {
-	return "This is my r&eacute;sum&eacute; route.";
+	return View::make('resume');
 });
 
 Route::get('/portfolio', function()
 {
-	return "This is my portfolio route.";
+	return View::make('portfolio');
 });
 
 Route::get('/rolldice/{guess}', function($guess) 
