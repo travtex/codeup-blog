@@ -16,7 +16,7 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::get('/sayhello/{name}', function($name)
+Route::get('/sayhello/{name?}', function($name = 'Travis')
 {
     $data = array(
         'name' => $name
@@ -36,9 +36,13 @@ Route::get('/portfolio', function()
 
 Route::get('/rolldice/{guess}', function($guess) 
 {
+    $random = rand(1, 6);
+    $message = ($random == $guess) ? "You guessed correctly!  Yay." 
+                                 : "You guessed incorrectly!  Boo.";
     $data = array(
+        'message' => $message,
         'guess' => $guess,
-        'roll' => rand(1,6)
+        'roll' => $random
         );
     return View::make('roll-dice')->with($data);
 });
