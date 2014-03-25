@@ -31,13 +31,12 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Trav Flatt</a>
+          <a class="navbar-brand" href="{{{ action('HomeController@showWelcome')}}}">Trav Flatt</a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="portfolio">Portfolio</a></li>
-            <li><a href="resume">R&eacute;sum&eacute;</a></li>
+            <li><a href="{{{ action('HomeController@showPortfolio')}}}">Portfolio</a></li>
+            <li><a href="{{{ action('HomeController@showResume')}}}">R&eacute;sum&eacute;</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a target="_blank" href="https://www.facebook.com/travis.flatt.5"><i class="fa fa-facebook-square fa-lg"></i></a></li>
