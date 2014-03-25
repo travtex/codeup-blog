@@ -10,31 +10,31 @@
 	float: left;
 	width: 50px;
 	height: 44px;
-	background: url('../images/iview/slider-controls.png') no-repeat;
+	background: url('..//img/iview/slider-controls.png') no-repeat;
 }
 .iview-controlNav a.iview-controlNextNav {
 	float: left;
 	width: 50px;
 	height: 44px;
-	background: url('../images/iview/slider-controls.png') no-repeat -50px 0px;
+	background: url('..//img/iview/slider-controls.png') no-repeat -50px 0px;
 }
 .iview-controlNav div.iview-items {
 	float: left;
 	padding: 0px 10px 0px 10px;
 	height: 44px;
-	background: url('../images/iview/nav-bg.png');
+	background: url('..//img/iview/nav-bg.png');
 }
 .iview-controlNav a.iview-control {
 	padding: 0px;
 	float: left;
 	width: 11px;
 	height: 12px;
-	background: url('../images/iview/bullets.png') no-repeat;
+	background: url('..//img/iview/bullets.png') no-repeat;
 	line-height: 0px;
 }
 .iview-controlNav a.iview-control.active {background-position: 0px -12px;}
 .iview-caption {
-	background: url('../images/iview/caption-bg.png');
+	background: url('..//img/iview/caption-bg.png');
 	color: #FFF;
 	border-radius: 3px;
 	padding: 10px 15px;
@@ -110,7 +110,7 @@
 #iview #iview-tooltip {
 	display: none;
 	position: absolute;
-	background: url('../images/iview/tooltip.png') no-repeat;
+	background: url('..//img/iview/tooltip.png') no-repeat;
 	width: 124px;
 	height: 50px;
 	bottom: 0px;

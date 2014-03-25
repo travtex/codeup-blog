@@ -8,13 +8,13 @@ body {background: #272727;color: #A2A2A2}
 .footer-last {background: #161616;border-color: #222}
 .services .s_icon span {border-color: #161616}
 .services [class^="grid_"]:before, .after_line {background: #313131}
-.headdown {border-color: #1F1F1F;border-color: rgba(31, 31, 31, 0.4);background: url(../images/header_dark.png) repeat-x top}
+.headdown {border-color: #1F1F1F;border-color: rgba(31, 31, 31, 0.4);background: url(/img/header_dark.png) repeat-x top}
 a, .sf-menu a, .search_icon, .header_bag a:hover, .shopping_bag:hover .header_bag a, h1, h2, h3, h4, h5, h6, .services .s_icon, .services .tbutton, .rev_testimonials, .pricing-table, .widget .col-title, 
 .item_price .amount, table.shop_attributes td, table.shop_table .product-name a, .woocommerce table.shop_table .product-name a,
 .total_w_table td, table.shop_table th, .woocommerce table.shop_table th, table.shop_table td.product-subtotal, .woocommerce table.shop_table td.product-subtotal, .dropcap-txt, .dropcap-border,
 .testimonial-s strong, .col-eleven {color: #FFF}
 .l_ht span {color: #B4B4B4}
-.view_cart_mini, .s_form, .intro_p {background: url(../images/transparent_dark.png) repeat;background: rgba(0, 0, 0, 0.3)}
+.view_cart_mini, .s_form, .intro_p {background: url(/img/transparent_dark.png) repeat;background: rgba(0, 0, 0, 0.3)}
 .social a:hover i {border-color: transparent}
 .social a i, .languages a, #toTop {border-color: #646464}
 .social a, .languages span, #toTop {color: #747474}

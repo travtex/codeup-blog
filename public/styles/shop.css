@@ -214,7 +214,7 @@
 	display:none;
 	-webkit-animation: fadeInDown .5s;
 	animation: fadeInDown .5s;
-	background: url(../images/transparent.png) repeat;
+	background: url(/img/transparent.png) repeat;
 	background: rgba(255, 255, 255, 0.3);
 	border-radius: 6px;
 }

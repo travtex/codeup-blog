@@ -2,31 +2,33 @@
 <!--[if IE 7 ]><html class="ie7" lang="en"><![endif]-->
 <!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
 <!--[if IE 9 ]><html class="ie9" lang="en"><![endif]-->
-<!--[if (gte IE 10)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><!--<![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<!--<![endif]-->
 <head>
-  <title>inCreate Responsive Multipurpose HTML5</title>
+  <title>Travis C. Flatt -- Web Designer/Developer</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <!-- Seo Meta -->
-    <meta name="description" content="inCreate Responsive Multipurpose HTML5">
-    <meta name="keywords" content="inCreate, corporate, light, dark, themeforest, multi purpose, premium, unlimited, ultimate">
+    <meta name="description" content="Travis C. Flatt, Web Designer/Developer based in San Antonio, TX.">
+    <meta name="keywords" content="trav travis flatt web design developer designer graphic san antonio texas resume portfolio">
 
   <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="css/custom-bootstrap.css"
-    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="styles/shop.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="styles/icons.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="styles/animate.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="styles/responsive.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="js/layerslider/css/layerslider.css">
-    <link rel="stylesheet" type="text/css" href="js/layerslider/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/custom-bootstrap.css') }}"
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.min.css') }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('style.css') }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('styles/shop.css') }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('styles/icons.css') }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('styles/animate.css') }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('styles/responsive.css') }}" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('js/layerslider/css/layerslider.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('js/layerslider/css/custom.css') }}">
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
   <!-- CustomStyles -->
-    <link rel="stylesheet" type="text/css" href="styles/dark.css" id="dark" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/colors/emerald.css" media="screen" class="emerald">
-    <style>body {background: url(img/backgrounds/6.jpg) fixed}</style>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('styles/dark.css') }}" id="dark" media="screen">
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/colors/asphalt.css') }}" media="screen" class="emerald">
+    <style>body {background: url(/img/backgrounds/1.jpg) fixed}</style>
 
   <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico">
@@ -60,12 +62,15 @@
               </div><!-- end social -->
             </div><!-- end social and bag -->
           </div><!-- row -->
-        </div><!-- head -->
+
+        
+        <!-- head -->
+
   
         <div class="headdown my_sticky">
           <div class="row clearfix">
             <div class="logo">
-              <a href="index.html" title="inCreate Responsive Multipurpose HTML5 Template"><img src="img/logo_dark.png" alt="inCreate Responsive Multipurpose HTML5"></a>
+              <a href="index.html" title="inCreate Responsive Multipurpose HTML5 Template"><img src="{{ URL::asset('img/logo_dark.png') }}" alt="inCreate Responsive Multipurpose HTML5"></a>
             </div>
 
             <div class="search">
@@ -114,7 +119,7 @@
                       </ol>
                     </li>
                     <li class="col1 featured_Img">
-                      <a href="shop.html"><img src="img/shop/megamenu.png" alt="#" title="New Year Sales"></a>
+                      <a href="shop.html"><img src="{{ URL::asset('img/shop/megamenu.png') }}" alt="#" title="New Year Sales"></a>
                     </li>
                   </ul>
                 </li>
@@ -211,11 +216,81 @@
             </nav><!-- end nav -->
           </div><!-- row -->
         </div><!-- headdown -->
+
       </header><!-- end header -->
+    
     @yield('content')
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <footer id="footer">
+      <div class="row pad_foot clearfix">
+        <div class="grid_4">
+          <img src="{{ URL::asset('img/logo_dark.png') }}" alt="logo title" class="mb">
+
+          <div class="widget-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+            <div class="social">
+              <a href="#" class="toptip" title="Twitter"><i class="fa-twitter"></i></a>
+              <a href="#" class="toptip" title="Facebook"><i class="fa-facebook"></i></a>
+              <a href="#" class="toptip" title="Pinterest"><i class="fa-pinterest"></i></a>
+              <a href="#" class="toptip" title="Youtube"><i class="fa-youtube"></i></a>
+              <a href="#" class="toptip" title="SoundCloud"><i class="fa-cloud"></i></a>
+              
+            </div>
+          </div><!-- widget content -->
+        </div><!-- grid 4 -->
+
+        <div class="grid_4">
+          <h3 class="col-title">Our Location</h3>
+
+          <div class="widget-content">
+            <iframe height="160" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=New+York,+NY,+United+States&amp;aq=0&amp;oq=New+yok&amp;sll=37.0625,-95.677068&amp;sspn=41.224889,86.044922&amp;ie=UTF8&amp;hq=&amp;hnear=New+York&amp;t=m&amp;z=10&amp;ll=40.714353,-74.005973&amp;output=embed"></iframe>
+          </div><!-- widget content -->
+        </div><!-- grid 4 -->
+  
+        <div class="grid_4">
+          <h3 class="col-title">PhotoStream <small>- Instagram</small></h3>
+
+          <div class="widget-content">
+            <iframe src="http://snapwidget.com/in/?u=bW92ZW1iZXJ8aW58NzB8NHwyfHxub3wxOHxmYWRlT3V0fG9uU3RhcnR8bm8=&amp;v=171113" width="352" height="176"></iframe>
+          </div><!-- widget content -->
+        </div><!-- grid 4 -->
+      </div><!-- row -->
+
+      <div class="footer-last">
+        <div class="row clearfix">
+          <span class="copyright">© 2014 <a href="#" class="toptip" title="Design and Development">Travis C. Flatt</a>.</span>
+  
+          <div id="toTop" class="toptip" title="Back to Top"><i class="fa-angle-up"></i></div><!-- Back to top -->
+
+          <div class="foot-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">F.A.Q</a></li>
+              <li><a href="portfolio4.html">Portfolio</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul><!-- end links -->
+          </div><!-- end foot menu -->
+        </div><!-- end row -->
+      </div><!-- end last footer -->
+
+    </footer><!-- end footer -->
+  </div> <!-- end layout -->
+</div> <!-- end frame -->
+
+    
+    <script type="text/javascript" src="{{ URL::asset('js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/theme20.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/jquery.prettyPhoto.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/jquery.flexslider-min.js') }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/custom.js') }}"></script>
+
+    <script src="{{ URL::asset('js/layerslider/jQuery/jquery-transit-modified.js') }}" type="text/javascript"></script>
+    <script src="{{ URL::asset('js/layerslider/js/layerslider.transitions.js') }}" type="text/javascript"></script>
+    <script src="{{ URL::asset('js/layerslider/js/layerslider.kreaturamedia.jquery.js') }}" type="text/javascript"></script>
     @yield('bottomscript')
 </body>
 </html>

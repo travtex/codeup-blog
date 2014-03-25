@@ -1,8 +1,353 @@
 @extends('layouts.master')
 
 @section('content')
-	<div class="welcome">
-		<a href="http://laravel.com" title="Laravel PHP Framework"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIcAAACHCAYAAAA850oKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyNUVCMTdGOUJBNkExMUUyOTY3MkMyQjZGOTYyREVGMiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyNUVCMTdGQUJBNkExMUUyOTY3MkMyQjZGOTYyREVGMiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI1RUIxN0Y3QkE2QTExRTI5NjcyQzJCNkY5NjJERUYyIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjI1RUIxN0Y4QkE2QTExRTI5NjcyQzJCNkY5NjJERUYyIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+g6J7EAAAEL1JREFUeNrsXQmU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"></a>
-		<h1>You have arrived.</h1>
-	</div>
+
+
+	<!-- Start Layer Slider -->
+
+		<div class="sliderr">
+			<div id="layerslider-container-fw-second">
+				<div id="layerslider" style="width: 100%; height: 700px; margin: 0px auto">
+
+		<div class="ls-layer" style="slidedirection: top; transition2d: all; slidedelay: 5000; durationin: 1000; durationout: 1500; easingin: easeInQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">							
+			<img class="ls-bg" src="/img/slides/4.jpg" alt="">
+			<img class="ls-s2"  src="/img/slides/ip4.png" alt="" style="position: absolute; top: 100px; left: 60px; slidedirection : bottom; slideoutdirection : bottom;  durationin : 1000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+			<img class="ls-s2"  src="/img/slides/cap_a1.png" alt="" style="position: absolute; top: 160px; left: 600px; slidedirection : top; slideoutdirection : top;  durationin : 2000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+			<img class="ls-s2"  src="/img/slides/cap_a2.png" alt="" style="position: absolute; top: 290px; left: 600px; slidedirection : right; slideoutdirection : right;  durationin : 2500; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+			<img class="ls-s2"  src="/img/slides/cap_a3.png" alt="" style="position: absolute; top: 410px; left: 600px; slidedirection : bottom; slideoutdirection : bottom;  durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+			<img class="ls-s2"  src="/img/slides/cap_a3.png" alt="" style="position: absolute; top: 410px; left: 750px; slidedirection : bottom; slideoutdirection : bottom;  durationin : 3500; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+		</div>
+
+		<div class="ls-layer" style="slidedirection: right; transition2d: all; slidedelay: 4500; durationin: 1000; durationout: 1500; easingin: easeInQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">							
+			<img class="ls-bg" src="/img/slides/5.jpg" alt="">
+			<img class="ls-s2"  src="/img/slides/ip5.png" alt="" style="position: absolute; top: 53px; left: 500px; slidedirection : right; slideoutdirection : right;  durationin : 1000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+			<img class="ls-s2"  src="/img/slides/cap_c1.png" alt="" style="position: absolute; top: 380px; left: 60px; slidedirection : bottom; slideoutdirection : bottom;  durationin : 1700; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+		</div>
+				</div>		
+			</div>
+		</div>
+	<!-- End Layer Slider -->
+
+		<div class="intro_p tac">
+			<div class="row inner clearfix">
+				<h2>Clean, Unique, Modern & Responsive HTML5 Template, Inspired iOS7 <small>Connect with us</small></h2>
+				<a href="#" class="tbutton large"><i class="icon_comment_alt"></i><span>Match Me To Advisors</span></a>
+				<a href="#" class="tbutton large m_left"><i class="icon_lightbulb_alt"></i><span>Do Your One Search</span></a>
+			</div><!-- End row -->
+		</div><!-- End intro p -->
+
+		<div class="page-content">
+			<div class="services set_two mbs">
+				<div class="row clearfix">
+					<div class="grid_6 mbf">
+						<div class="s_icon"><i class="icon_documents_alt"></i><span class="fa-check"></span></div>
+						<div class="s_info">
+							<h3>Well Documented</h3>
+							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
+							<a href="#" class="tbutton small"><span>More Details</span></a>
+						</div><!-- end info -->
+					</div><!-- end grid6 -->
+
+					<div class="grid_6 mbf">
+						<div class="s_icon"><i class="icon_box-checked"></i><span class="fa-check"></span></div>
+						<div class="s_info">
+							<h3>Unlimited Colors</h3>
+							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
+							<a href="#" class="tbutton small"><span>More Details</span></a>
+						</div><!-- end info -->
+					</div><!-- end grid6 -->
+
+					<div class="grid_6">
+						<div class="s_icon"><i class="icon_easel"></i><span class="fa-check"></span></div>
+						<div class="s_info">
+							<h3>Seo Optimized</h3>
+							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
+							<a href="#" class="tbutton small"><span>More Details</span></a>
+						</div><!-- end info -->
+					</div><!-- end grid6 -->
+
+					<div class="grid_6">
+						<div class="s_icon"><i class="icon_datareport"></i><span class="fa-check"></span></div>
+						<div class="s_info">
+							<h3>Unlimited Options</h3>
+							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
+							<a href="#" class="tbutton small"><span>More Details</span></a>
+						</div><!-- end info -->
+					</div><!-- end grid6 -->
+				</div><!-- end row -->
+			</div><!-- end services -->
+
+			<div class="grey-line mbs">
+				<div class="row clearfix">
+					<div class="grid_6 custom_block1" data-gen="bigEntrance">
+						<div class="inner_list">
+							<h3>- More Top Features from inCreate Template</h3>
+							<ul>
+								<li><a href="#custom_1"><i class="icon_box-checked"></i> Phasellus vehicula justo eget diam posuer</a></li>
+								<li><a href="#custom_2"><i class="icon_box-checked"></i> Eget diam posuere sollicitudin eu tincidunt nulla vehicula justo</a></li>
+								<li><a href="#custom_3"><i class="icon_box-checked"></i> Sollicitudin eu tincidunt nulla</a></li>
+								<li><a href="#custom_4"><i class="icon_box-checked"></i> Posuere sollicitudin eu tincidunt nulla loremo ipsum</a></li>
+								<li><a href="#custom_5"><i class="icon_box-checked"></i> Eget diam posuere sollicitudin eu tincidunt nulla</a></li>
+							</ul>
+						</div><!-- end inner -->
+					</div><!-- end grid6 -->
+
+					<div class="grid_6 custom_block1_img" data-gen="bigEntrance">
+						<div class="h_slider"><img class="custom_1" src="/img/assets/t3.png" alt="tablet"></div>
+						<div class="h_slider"><img class="custom_2" src="/img/assets/t2.png" alt="tablet"></div>
+						<div class="h_slider"><img class="custom_3" src="/img/assets/t1.png" alt="tablet"></div>
+						<div class="h_slider"><img class="custom_4" src="/img/assets/t4.png" alt="tablet"></div>
+						<div class="h_slider"><img class="custom_5" src="/img/assets/t5.png" alt="tablet"></div>
+					</div><!-- end grid6 -->
+				</div><!-- end row -->
+			</div><!-- end grey line -->
+
+			<div class="row mbs clearfix">
+				<div class="f_portfolio">
+					<div class="intro_content">
+						<div class="inner">
+							<h3> LATEST PROJECTS </h3>
+							<p> Print this page to PDF for the complete set of vectors. Or to use on the desktop, install FontAwesome.otf and copy and paste .. <a href="portfolio4.html">View All</a></p>
+						</div>
+					</div>
+					<div class="f_items">
+						<div class="portfolio_carousel">
+							<div class="anyClass">
+								<ul>
+									<li>
+										<img src="/img/assets/portfolio1.jpg" alt="#">
+										<div class="f_hover">
+											<div class="f_links">
+												<a class="tbutton small" href="/img/assets/portfolio1.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
+												<a class="tbutton small" href="portfolio_single.html"><span>More Details</span></a>
+											</div>
+											<h5> <a href="portfolio_single.html">Portfolio Project Title Here</a> </h5>
+										</div>
+									</li><!-- portfolio item -->
+									<li>
+										<img src="img/assets/portfolio2.jpg" alt="#">
+										<div class="f_hover">
+											<div class="f_links">
+												<a class="tbutton small" href="/img/assets/portfolio2.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
+												<a class="tbutton small" href="portfolio_single.html"><span>More Details</span></a>
+											</div>
+											<h5> <a href="portfolio_single.html">Portfolio Project Title Here</a> </h5>
+										</div>
+									</li><!-- portfolio item -->
+									<li>
+										<img src="img/assets/portfolio3.jpg" alt="#">
+										<div class="f_hover">
+											<div class="f_links">
+												<a class="tbutton small" href="/img/assets/portfolio3.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
+												<a class="tbutton small" href="portfolio_single.html"><span>More Details</span></a>
+											</div>
+											<h5> <a href="portfolio_single.html">Portfolio Project Title Here</a> </h5>
+										</div>
+									</li><!-- portfolio item -->
+									<li>
+										<img src="img/assets/portfolio4.jpg" alt="#">
+										<div class="f_hover">
+											<h5> <a href="#">Sed ut perspiciatis unde</a> </h5>
+										<div class="f_hover">
+											<div class="f_links">
+												<a class="tbutton small" href="/img/assets/portfolio4.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
+												<a class="tbutton small" href="portfolio_single.html"><span>More Details</span></a>
+											</div>
+											<h5> <a href="portfolio_single.html">Portfolio Project Title Here</a> </h5>
+										</div>
+										</div>
+									</li><!-- portfolio item -->
+									<li>
+										<img src="img/assets/portfolio5.jpg" alt="#">
+										<div class="f_hover">
+											<div class="f_links">
+												<a class="tbutton small" href="/img/assets/portfolio5.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
+												<a class="tbutton small" href="portfolio_single.html"><span>More Details</span></a>
+											</div>
+											<h5> <a href="portfolio_single.html">Portfolio Project Title Here</a> </h5>
+										</div>
+									</li><!-- portfolio item -->
+									<li>
+										<img src="img/assets/portfolio6.jpg" alt="#">
+										<div class="f_hover">
+											<div class="f_links">
+												<a class="tbutton small" href="/img/assets/portfolio6.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
+												<a class="tbutton small" href="portfolio_single.html"><span>More Details</span></a>
+											</div>
+											<h5> <a href="portfolio_single.html">Portfolio Project Title Here</a> </h5>
+										</div>
+									</li><!-- portfolio item -->
+								</ul>
+							</div>
+							<div class="preve"><i class="fa-angle-left"></i></div><!-- portfolio carousel left -->
+							<div class="nexte"><i class="fa-angle-right"></i></div><!-- portfolio carousel right -->
+						</div><!-- portfolio carousel -->
+
+					</div>
+				</div><!-- end f portfolio -->
+			</div><!-- end row -->
+
+			<div class="row clearfix mbs">
+				<div class="grid_6">
+					<ul class="tabs">
+						<li><a href="#A_1" class="active">Smart Options</a></li>
+						<li><a href="#A_2">RTL Support</a></li>
+						<li><a href="#A_3">Tons of Shortcodes</a></li>
+					</ul><!-- tabs -->
+
+					<ul class="tabs-content">
+						<li id="A_1" class="active"><img src="img/assets/character.jpg" alt="" class="fll">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor. </li><!-- tab content -->
+
+						<li id="A_2"><p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget...</p><p>"Nulla sagittis porttitor varius. Vestibulum eleifend, lorem sit amet gravida accumsan, nisi est tempor risus, non suscipit lectus nunc sit amet nunc. Pellentesque iaculis sapien at lacus vulputate sodales et eget quam. Etiam tristique bibendum leo, quis sagittis urna tempus non. Aliquam aliquet, nibh nec placerat tempus, tellus neque accumsan justo,consectetur lorem fringilla vel. Nulla facilisi."</p></li><!-- tab content -->
+
+						<li id="A_3">Nulla sagittis porttitor varius. Vestibulum eleifend, lorem sit amet gravida accumsan, nisi est tempor risus, non suscipit lectus nunc sit amet nunc. Pellentesque iaculis sapien at lacus vulputate sodales et eget quam. Etiam tristique bibendum leo, quis sagittis urna tempus non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor.</li><!-- tab content -->
+					</ul><!-- end tabs -->
+				</div><!-- end grid6 -->
+
+				<div class="grid_6">
+						<ul class="tt-accordion">
+							<li class="sub-accordion">
+								<div class="accordion-head">
+									<div class="accordion-head-sign"></div>
+									<p>LEARN MORE ABOUT inCREATE</p>
+								</div>
+								<div class="accordion-content">
+									Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris.
+								</div>
+							</li>
+							<li class="sub-accordion">
+								<div class="accordion-head">
+									<div class="accordion-head-sign"></div>
+									<p>ULTIMATE VERSION VERY FLEXIBLE</p>
+								</div>
+								<div class="accordion-content">Nulla id ligula arcu. Integer et tincidunt lectus. Duis id ligula diam, quis dapibus erat. Curabitur nec libero et est vulputate sollicitudin. Fusce sit amet turpis sed mauris volutpat posuere. Morbi vulputate, odio eget adipiscing faucibus, lorem ipsum facilisis justo, gravida tempus orci nisi ac eros. Pellentesque metus dolor, imperdiet sed ornare vel, tempus eu ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec malesuada, massa ut lacinia congue, eros felis aliquam arcu, non euismod ligula sapien in est. Etiam vitae congue orci.
+								</div>
+							</li>
+							<li class="sub-accordion">
+								<div class="accordion-head">
+									<div class="accordion-head-sign"></div>
+									<p>EASY CUSTOMIZATION AND CHANGE COLORS</p>
+								</div>
+								<div class="accordion-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris.
+								</div>
+							</li>
+						</ul><!-- end accordion -->
+				</div><!-- end grid6 -->
+			</div><!-- clearfix -->
+
+			<div class="row clearfix mbs">
+				<div class="grid_6">
+					<h3 class="block_title">Our Skills</h3>
+					<div class="progress-bar stripes">
+						<span rel="94"></span>
+						<div class="progress-bar-text">Themeforest - <span>94%</span></div>
+					</div>
+					<div class="progress-bar stripes">
+						<span rel="81"></span>
+						<div class="progress-bar-text">Graphicriver - <span>81%</span></div>
+					</div>
+					<div class="progress-bar stripes">
+						<span rel="50"></span>
+						<div class="progress-bar-text">Photodune - <span>50%</span></div>
+					</div>
+					<div class="progress-bar stripes">
+						<span rel="68"></span>
+						<div class="progress-bar-text">Audiojungle - <span>68%</span></div>
+					</div>
+					<div class="progress-bar stripes">
+						<span rel="70"></span>
+						<div class="progress-bar-text">Audiojungle - <span>68%</span></div>
+					</div>
+				</div><!-- end grid6 -->
+
+				<div class="grid_6">
+					<h3 class="block_title">Blog Posts</h3>
+					<div class="grid_6 f_blog">
+						<div class="f_thumb">
+							<img src="img/assets/post_1.jpg" alt="#">
+							<div class="f_hover"><a href="blog_single.html"><i class="icon_link_alt"></i></a></div>
+						</div>
+						<h4> <a href="blog_single.html">Labore et dolore magnam aliquam quaerat</a> </h4>
+						<div class="f_meta"><span><i class="icon_profile mi"></i> Admin</span><span><i class="icon_clock_alt mi"></i> 27 October 2013</span></div>
+					</div><!-- end post -->
+
+					<div class="grid_6 f_blog">
+						<div class="f_thumb">
+							<div class="projectslider clearfix flexslider">
+								<ul class="slides">
+									<li><img src="/img/assets/post_3.jpg" alt="#"></li>
+									<li><img src="/img/assets/post_4.jpg" alt="#"></li>
+								</ul>
+							</div>
+						</div>
+						<h4> <a href="blog_single.html">Sed ut perspiciatis unde omnis iste natus</a> </h4>
+						<div class="f_meta"><span><i class="icon_profile mi"></i> Admin</span><span><i class="icon_clock_alt mi"></i> 30 November 2013</span></div>
+					</div><!-- end post -->
+				</div><!-- end grid6 -->
+			</div><!-- clearfix -->
+
+			<div class="parallax p_testimonials mbs" data-stellar-background-ratio="0.2">
+				<div class="row clearfix">
+					<div class="custom_block2" data-gen="bigEntrance">
+						<div class="inner_list">
+							<ul>
+								<li><a href="#t_1"><img src="/img/assets/avatar1.jpg" alt=""></a></li>
+								<li><a href="#t_2"><img src="/img/assets/avatar2.jpg" alt=""></a></li>
+								<li><a href="#t_3"><img src="/img/assets/avatar3.jpg" alt=""></a></li>
+								<li><a href="#t_4"><img src="/img/assets/avatar4.jpg" alt=""></a></li>
+								<li><a href="#t_5"><img src="/img/assets/avatar5.jpg" alt=""></a></li>
+								<li><a href="#t_6"><img src="/img/assets/avatar6.jpg" alt=""></a></li>
+								<li><a href="#t_7"><img src="/img/assets/avatar7.jpg" alt=""></a></li>
+							</ul>
+						</div><!-- end inner -->
+					</div><!-- end -->
+					
+					<div class="custom_block2_testimonial" data-gen="bigEntrance">
+						<div class="h_slider"><span class="t_1"><i class="icon_quotations"></i> Dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt <i class="icon_quotations"></i> <small> - Anna Rabinson </small></span></div>
+						<div class="h_slider"><span class="t_2"><i class="icon_quotations"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. <i class="icon_quotations"></i> <small> - Jennifer Raya </small></span></div>
+						<div class="h_slider"><span class="t_3"><i class="icon_quotations"></i> Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum maker including versions of Lorem Ipsum. <i class="icon_quotations"></i> <small> - Nicolas Cool </small></span></div>
+						<div class="h_slider"><span class="t_4"><i class="icon_quotations"></i> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letter. <i class="icon_quotations"></i> <small> - Ryan Giggs </small></span></div>
+						<div class="h_slider"><span class="t_5"><i class="icon_quotations"></i> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. <i class="icon_quotations"></i> <small> - Victoria Hins </small></span></div>
+						<div class="h_slider"><span class="t_6"><i class="icon_quotations"></i> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden. <i class="icon_quotations"></i> <small> - Annie Maria </small></span></div>
+						<div class="h_slider"><span class="t_7"><i class="icon_quotations"></i> Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable. <i class="icon_quotations"></i> <small> - Victor Zack </small></span></div>
+					</div><!-- end -->
+				</div><!-- end row -->
+			</div><!-- end parallax testimonials -->
+
+			<div class="row clearfix mbs" data-gen="bigEntrance">
+				<div class="tac"><h3 class="block_title">Clients We’ve Worked With So Far</h3><span class="after_line"></span></div>
+				<ul>
+					<li class="grid_2"><a href="#"><img src="/img/assets/logo1.jpg" alt="#" class="toptip" title="Logo name here"></a></li><!-- logo -->
+					<li class="grid_2"><a href="#"><img src="/img/assets/logo2.jpg" alt="#" class="toptip" title="Logo name here"></a></li><!-- logo -->
+					<li class="grid_2"><a href="#"><img src="/img/assets/logo3.jpg" alt="#" class="toptip" title="Logo name here"></a></li><!-- logo -->
+					<li class="grid_2"><a href="#"><img src="/img/assets/logo4.jpg" alt="#" class="toptip" title="Logo name here"></a></li><!-- logo -->
+					<li class="grid_2"><a href="#"><img src="/img/assets/logo5.jpg" alt="#" class="toptip" title="Logo name here"></a></li><!-- logo -->
+					<li class="grid_2"><a href="#"><img src="/img/assets/logo6.jpg" alt="#" class="toptip" title="Logo name here"></a></li><!-- logo -->
+				</ul>
+			</div><!-- end row -->
+		</div><!-- end page content -->
+
+		
+
+	</div><!-- end layout -->
+</div><!-- end frame -->
+@stop
+
+@section('bottomscript')
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#layerslider').layerSlider({
+			skinsPath : '/js/layerslider/skins/',
+			skin : 'fullwidth',
+			thumbnailNavigation : 'hover',
+			hoverPrevNext : false,
+			navButtons : false,
+			navStartStop : false,
+			responsive : true,
+			pauseOnHover : true,
+			responsiveUnder : 1140,
+			sublayerContainer : 1140
+		});
+	});
+</script>
 @stop

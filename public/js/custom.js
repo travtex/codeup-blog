@@ -476,7 +476,7 @@ jQuery(document).ready(function ($) {
 		jQuery('.custom_block2_testimonial .h_slider'+' .'+slide_post_id).parent().addClass('showme').stop(true, true);
 	});
 	// Example Load
-	$('.load_more_portfolio').append('<img style="display: none;margin: 0 auto" src="images/loading2.gif"><h4 style="display: none">Sorry! Not more items.</h4>');
+	$('.load_more_portfolio').append('<img style="display: none;margin: 0 auto" src="/img/loading2.gif"><h4 style="display: none">Sorry! Not more items.</h4>');
 	$( ".load_more_portfolio a" ).removeAttr('href').click(function() {
 		jQuery('.load_more_portfolio a').fadeOut( 100 );
 		jQuery('.load_more_portfolio img').fadeIn( 1000 );

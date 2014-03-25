@@ -15,3 +15,5 @@ $(".profile-pic").hover(function() {
       e.preventDefault()
       $(this).tab('show')
     });
+
+    
