@@ -1,52 +1,217 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="en"><![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><!--<![endif]-->
 <head>
-    <title>Trav Flatt - Web Developer</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Blog and Portfolio for Travis Flatt, Web Designer/Developer 
-    based in San Antonio, TX">
-    <meta name="author" content="Travis C. Flatt">
-    <!-- Bootstrap core CSS -->
-    <link href="//netdna.bootstrapcdn.com/bootswatch/3.1.1/flatly/bootstrap.min.css" rel="stylesheet">
-    <link href="css/custom-bootstrap.css" rel="stylesheet" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <title>inCreate Responsive Multipurpose HTML5</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <!-- Seo Meta -->
+    <meta name="description" content="inCreate Responsive Multipurpose HTML5">
+    <meta name="keywords" content="inCreate, corporate, light, dark, themeforest, multi purpose, premium, unlimited, ultimate">
 
+  <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/custom-bootstrap.css"
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles/shop.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles/icons.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles/animate.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles/responsive.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="js/layerslider/css/layerslider.css">
+    <link rel="stylesheet" type="text/css" href="js/layerslider/css/custom.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    @yield('topscript')
+  <!-- CustomStyles -->
+    <link rel="stylesheet" type="text/css" href="styles/dark.css" id="dark" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/colors/emerald.css" media="screen" class="emerald">
+    <style>body {background: url(img/backgrounds/6.jpg) fixed}</style>
+
+  <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EmulateIE8; IE=EDGE" />
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  @yield('topscript')
 </head>
 <body>
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="{{{ action('HomeController@showWelcome')}}}">Trav Flatt</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="{{{ action('HomeController@showPortfolio')}}}">Portfolio</a></li>
-            <li><a href="{{{ action('HomeController@showResume')}}}">R&eacute;sum&eacute;</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a target="_blank" href="https://www.facebook.com/travis.flatt.5"><i class="fa fa-facebook-square fa-lg"></i></a></li>
-            <li><a target="_blank" href="http://www.linkedin.com/in/travisflatt/"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
-            <li><a target="_blank" href="https://github.com/travtex"><i class="fa fa-github-alt fa-lg"></i></a></li>
-            <li><a target="_blank" href="https://soundcloud.com/travis-flatt"><i class="fa fa-microphone fa-lg"></i></a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+  <div id="frame_">
+    <div id="layout" class="boxed-margin">
+      <header id="header">
+        <div class="head_up">
+          <div class="row clearfix">
+            <div class="l_ht">
+              <span><i class="icon_mobile"></i>(530) 435-5775</span>
+              <span><i class="icon_pin_alt"></i>San Antonio, TX‎</span>
+            </div><!-- end text left -->
+
+       
+              <div class="social social_head">
+                <a href="#" class="bottomtip" title="Twitter"><i class="fa-twitter"></i></a>
+                <a href="#" class="bottomtip" title="Facebook"><i class="fa-facebook"></i></a>
+                <a href="#" class="bottomtip" title="Pinterest"><i class="fa-pinterest"></i></a>
+                <a href="#" class="bottomtip" title="Youtube"><i class="fa-youtube"></i></a>
+                <a href="#" class="bottomtip" title="SoundCloud"><i class="fa-cloud"></i></a>
+                
+              </div><!-- end social -->
+            </div><!-- end social and bag -->
+          </div><!-- row -->
+        </div><!-- head -->
+  
+        <div class="headdown my_sticky">
+          <div class="row clearfix">
+            <div class="logo">
+              <a href="index.html" title="inCreate Responsive Multipurpose HTML5 Template"><img src="img/logo_dark.png" alt="inCreate Responsive Multipurpose HTML5"></a>
+            </div>
+
+            <div class="search">
+              <div class="search_icon"><i class="icon_search icon_close"></i></div>
+              <div class="s_form">
+                <form action="search_result.html" id="search" method="get">
+                  <input id="inputhead" name="search" type="text" onfocus="if (this.value=='Start Searching...') this.value = '';" onblur="if (this.value=='') this.value = 'Start Searching...';" value="Start Searching..." placeholder="Start Searching ...">
+                  <button type="submit"><i class="icon_search"></i></button>
+                </form><!-- end form -->
+              </div>
+            </div>
+
+            <nav>
+              <ul class="sf-menu">
+                <li class="current"><a href="index.html">Home</a>
+                  <ul>
+                    <li class="current"><a href="index_2.html">Home 2 LayerSlider</a></li>
+                    <li><a href="index_3.html">Home 3 FlexSlider</a></li>
+                    <li><a href="index_4.html">Home 4 NivoSlider</a></li>
+                    <li><a href="index_5.html">Home 5 ModernSlider</a></li>
+                    <li><a href="index_6.html">Home 6 iViewSlider</a></li>
+                    <li><a href="intro_preview.html">... More Versions</a></li>
+                  </ul>
+                </li>
+                <li><a href="shop.html">Shop</a>
+                  <ul class="col3 mega">
+                    <li class="col1">
+                      <ol>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="shop_sidebar_right.html">Right Sidebar</a></li>
+                        <li><a href="shop_sidebar_left.html">Left Sidebar</a></li>
+                        <li><a href="shop_sidebar_both.html">Both Sidebar</a></li>
+                        <li><a href="shop_sidebar_both_left.html">Both Side Left</a></li>
+                        <li><a href="shop_sidebar_both_right.html">Both Side Right</a></li>
+                        <li><a href="shop_masonry.html">Shop Masonry</a></li>
+                      </ol>
+                    </li>
+                    <li class="col1">
+                      <ol>
+                        <li><a href="shop_product.html">Shop Product</a></li>
+                        <li><a href="shop_bag.html">Shopping Bag</a></li>
+                        <li><a href="shop_track_your_order.html">Track Your Order</a></li>
+                        <li><a href="shop_checkout.html">Checkout → Pay</a></li>
+                        <li><a href="shop_login_register.html">Login / Register</a></li>
+                        <li><a href="shop_account.html">My Account</a></li>
+                      </ol>
+                    </li>
+                    <li class="col1 featured_Img">
+                      <a href="shop.html"><img src="img/shop/megamenu.png" alt="#" title="New Year Sales"></a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#">Pages</a>
+                  <ul>
+                    <li><a href="icons.html">700 Retina Icons</a></li>
+                    <li><a href="#">Shortcodes</a>
+                      <ul>
+                        <li><a href="shortcodes_accordion.html">Accordion</a></li>
+                        <li><a href="shortcodes_buttons.html">Buttons</a></li>
+                        <li><a href="shortcodes_typography.html">Typography</a></li>
+                        <li><a href="shortcodes_pricing_tables.html">Pricing Tables</a></li>
+                        <li><a href="shortcodes_tables.html">Tables</a></li>
+                        <li><a href="shortcodes_testimonials.html">Tetimonials</a></li>
+                        <li><a href="shortcodes_lightbox.html">Lightbox</a></li>
+                        <li><a href="shortcodes_video.html">Video</a></li>
+                        <li><a href="shortcodes_google-map.html">Google Map</a></li>
+                        <li><a href="shortcodes_social-icons.html">Retina Social Icons</a></li>
+                        <li><a href="shortcodes_tab.html">Tab</a></li>
+                        <li><a href="shortcodes_toggle.html">Toggle</a></li>
+                        <li><a href="shortcodes_message-box.html">Message Box</a></li>
+                        <li><a href="shortcodes_action-box.html">Action Box</a></li>
+                        <li><a href="shortcodes_progress-bars.html">Progress Bars</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="rtl.html">RTL Support</a></li>
+                    <li><a href="about_us.html">About Our Team</a></li>
+                    <li><a href="#">Services</a>
+                      <ul>
+                        <li><a href="services_1.html">Services Set 1</a></li>
+                        <li><a href="services_2.html">Services Set 2</a></li>
+                        <li><a href="services_3.html">Services Set 3</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="404.html">Custom 404</a></li>
+                    <li><a href="faq.html">F.A.Q's</a></li>
+                    <li><a href="support_forum.html">Support Forum</a></li>
+                    <li><a href="titles.html">Heading Title Types</a></li>
+                    <li><a href="search_result.html">Search Result</a></li>
+                    <li><a href="under_construction.html">Under Construction</a></li>
+                    <li><a href="#">Third Level</a>
+                      <ul>
+                        <li><a href="#">Sub Menu 1</a></li>
+                        <li><a href="#">Sub Menu 2</a>
+                          <ul>
+                            <li><a href="#">Sub Menu 1</a></li>
+                            <li><a href="#">Sub Menu 2</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="portfolio4.html">Portfolio</a>
+                  <ul>
+                    <li><a href="portfolio4.html">Portfolio 4 Columns</a></li>
+                    <li><a href="portfolio3.html">Portfolio 3 Columns</a></li>
+                    <li><a href="portfolio2.html">Portfolio 2 Columns</a></li>
+                    <li><a href="portfolio_masonry.html">Portfolio Masonry</a></li>
+                    <li><a href="portfolio3_sidebar.html">Portfolio 3col+Sidebar</a></li>
+                    <li><a href="portfolio2_sidebar.html">Portfolio 2col+Sidebar</a></li>
+                    <li><a href="portfolio_single_image.html">Project Image</a></li>
+                    <li><a href="portfolio_single_slider.html">Project Slider</a></li>
+                    <li><a href="portfolio_single_video.html">Project Video</a></li>
+                    <li><a href="portfolio_single_sidebar.html">Project with Sidebar</a></li>
+                  </ul>
+                </li>
+                <li><a href="blog.html">Blog</a>
+                  <ul>
+                    <li><a href="blog.html">Large Thumbnail</a></li>
+                    <li><a href="blog_medium.html">Medium Thumbnail</a></li>
+                    <li><a href="blog_small.html">Small Thumbnail</a></li>
+                    <li><a href="blog_left_sidebar.html">Blog Left Sidebar</a></li>
+                    <li><a href="blog_both_sidebar.html">Blog Both Sidebar</a></li>
+                    <li><a href="blog_both_sidebar_left.html">Both Sidebar Left</a></li>
+                    <li><a href="blog_both_sidebar_right.html">Both Sidebar Right</a></li>
+                    <li><a href="#">Blog Single Post</a>
+                      <ul>
+                        <li><a href="blog_single_image.html">Single Post Image</a></li>
+                        <li><a href="blog_single_slider.html">Single Post Slider</a></li>
+                        <li><a href="blog_single_video.html">Single Post Video</a></li>
+                        <li><a href="blog_single_sound.html">Single Post Sound</a></li>
+                        <li><a href="blog_single_facebook_comments.html">Facebook Comments</a></li>
+                        <li><a href="blog_single_default_comments.html">Default Comments</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="blog_two_columns.html">Blog Two Columns</a></li>
+                    <li><a href="blog_three_columns.html">Blog Three Columns</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul><!-- end menu -->
+            </nav><!-- end nav -->
+          </div><!-- row -->
+        </div><!-- headdown -->
+      </header><!-- end header -->
     @yield('content')
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
