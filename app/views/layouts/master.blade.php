@@ -31,8 +31,8 @@
     <style>body {background: url(/img/backgrounds/1.jpg) fixed}</style>
 
   <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/img/donq.ico">
+    <link rel="apple-touch-icon" href="/img/donq.png">
 
   <!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EmulateIE8; IE=EDGE" />
