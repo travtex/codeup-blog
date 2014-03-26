@@ -13,8 +13,18 @@
 
 Route::get('/', 'HomeController@showWelcome');
 
-Route::get('/resume', 'HomeController@showResume');
+Route::get('orm-test', function() {
+    // $post1 = new Post();
+    // $post1->title = "Another New Post";
+    // $post1->body = "The post that is this post is about posty things.";
+    // $post1->save();
+});
 
-Route::get('/portfolio', 'HomeController@showPortfolio');
+Route::get('resume', 'HomeController@showResume');
 
-Route::resource('posts', 'PostsController');
+Route::get('portfolio', 'HomeController@showPortfolio');
+
+Route::get('blog/{id}', 'PostsController@show');
+
+Route::resource('blog', 'PostsController@index');
+
