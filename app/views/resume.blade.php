@@ -2,7 +2,8 @@
 
 @section('content')
 
-<div class="container">
+<div class="page-content">
+  <div class="container">
       <div class="jumbotron welcome">
         <div class="row">
           <div class="col-xs-8">
@@ -203,6 +204,7 @@
           </div>
         </div>
       </div>
+    </div>
 
 
 @stop
