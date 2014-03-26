@@ -245,10 +245,13 @@
         </div><!-- grid 4 -->
   
         <div class="grid_4">
-          <h3 class="col-title">PhotoStream <small>- Instagram</small></h3>
+          <h3 class="col-title">Twitter <small>- Studio Quixotic</small></h3>
 
           <div class="widget-content">
-            <iframe src="http://snapwidget.com/in/?u=bW92ZW1iZXJ8aW58NzB8NHwyfHxub3wxOHxmYWRlT3V0fG9uU3RhcnR8bm8=&amp;v=171113" width="352" height="176"></iframe>
+            <a class="twitter-timeline" href="https://twitter.com/StudioQuixotic" data-widget-id="448858883327397888">Tweets by @StudioQuixotic</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id))
+                    {js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,
+                      "script","twitter-wjs");</script>
           </div><!-- widget content -->
         </div><!-- grid 4 -->
       </div><!-- row -->
@@ -261,10 +264,10 @@
 
           <div class="foot-menu">
             <ul>
-              <li><a href="index.html">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">F.A.Q</a></li>
-              <li><a href="portfolio4.html">Portfolio</a></li>
+              <li><a href="/portfolio">Portfolio</a></li>
               <li><a href="blog.html">Blog</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul><!-- end links -->
