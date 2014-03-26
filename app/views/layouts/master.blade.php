@@ -53,11 +53,13 @@
 
        
               <div class="social social_head">
-                <a href="#" class="bottomtip" title="Twitter"><i class="fa-twitter"></i></a>
-                <a href="#" class="bottomtip" title="Facebook"><i class="fa-facebook"></i></a>
-                <a href="#" class="bottomtip" title="Pinterest"><i class="fa-pinterest"></i></a>
-                <a href="#" class="bottomtip" title="Youtube"><i class="fa-youtube"></i></a>
-                <a href="#" class="bottomtip" title="SoundCloud"><i class="fa-cloud"></i></a>
+                <a href="https://twitter.com/StudioQuixotic" target="_blank" class="bottomtip" title="Twitter"><i class="fa-twitter"></i></a>
+                <a href="https://www.facebook.com/travis.flatt.5" target="_blank" class="bottomtip" title="Facebook"><i class="fa-facebook"></i></a>
+                <a href="http://www.pinterest.com/studioquix/" target="_blank" class="bottomtip" title="Pinterest"><i class="fa-pinterest"></i></a>
+                <a href="https://www.youtube.com/user/DoctorYikes" target="_blank" class="bottomtip" title="Youtube"><i class="fa-youtube"></i></a>
+                <a href="https://soundcloud.com/travis-flatt" target="_blank" class="bottomtip" title="SoundCloud"><i class="fa-cloud"></i></a>
+                <a href="http://www.linkedin.com/in/travisflatt/" target="_blank" class="bottomtip" title="Linkedin"><i class="fa-linkedin"></i></a>
+                <a href="https://github.com/travtex" title="Github" target="_blank" class="bottomtip"><i class="fa-github"></i></a>
                 
               </div><!-- end social -->
             </div><!-- end social and bag -->
@@ -70,7 +72,7 @@
         <div class="headdown my_sticky">
           <div class="row clearfix">
             <div class="logo">
-              <a href="index.html" title="inCreate Responsive Multipurpose HTML5 Template"><img src="{{ URL::asset('img/logo_dark.png') }}" alt="inCreate Responsive Multipurpose HTML5"></a>
+              <a href="/" title="Travis C. Flatt"><img src="{{ URL::asset('img/logo_dark.png') }}" alt="inCreate Responsive Multipurpose HTML5"></a>
             </div>
 
             <div class="search">
@@ -85,15 +87,7 @@
 
             <nav>
               <ul class="sf-menu">
-                <li class="current"><a href="index.html">Home</a>
-                  <ul>
-                    <li class="current"><a href="index_2.html">Home 2 LayerSlider</a></li>
-                    <li><a href="index_3.html">Home 3 FlexSlider</a></li>
-                    <li><a href="index_4.html">Home 4 NivoSlider</a></li>
-                    <li><a href="index_5.html">Home 5 ModernSlider</a></li>
-                    <li><a href="index_6.html">Home 6 iViewSlider</a></li>
-                    <li><a href="intro_preview.html">... More Versions</a></li>
-                  </ul>
+                <li class="current"><a href="/">Home</a>
                 </li>
                 <li><a href="shop.html">Shop</a>
                   <ul class="col3 mega">
@@ -230,11 +224,13 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
             <div class="social">
-              <a href="#" class="toptip" title="Twitter"><i class="fa-twitter"></i></a>
-              <a href="#" class="toptip" title="Facebook"><i class="fa-facebook"></i></a>
-              <a href="#" class="toptip" title="Pinterest"><i class="fa-pinterest"></i></a>
-              <a href="#" class="toptip" title="Youtube"><i class="fa-youtube"></i></a>
-              <a href="#" class="toptip" title="SoundCloud"><i class="fa-cloud"></i></a>
+              <a href="https://twitter.com/StudioQuixotic" target="_blank" class="toptip" title="Twitter"><i class="fa-twitter"></i></a>
+                <a href="https://www.facebook.com/travis.flatt.5" target="_blank" class="toptip" title="Facebook"><i class="fa-facebook"></i></a>
+                <a href="http://www.pinterest.com/studioquix/" target="_blank" class="toptip" title="Pinterest"><i class="fa-pinterest"></i></a>
+                <a href="https://www.youtube.com/user/DoctorYikes" target="_blank" class="toptip" title="Youtube"><i class="fa-youtube"></i></a>
+                <a href="https://soundcloud.com/travis-flatt" target="_blank" class="toptip" title="SoundCloud"><i class="fa-cloud"></i></a>
+                <a href="http://www.linkedin.com/in/travisflatt/" target="_blank" class="toptip" title="Linkedin"><i class="fa-linkedin"></i></a>
+                <a href="https://github.com/travtex" title="Github" target="_blank" class="toptip"><i class="fa-github"></i></a>
               
             </div>
           </div><!-- widget content -->
