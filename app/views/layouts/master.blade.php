@@ -72,7 +72,7 @@
         <div class="headdown my_sticky">
           <div class="row clearfix">
             <div class="logo">
-              <a href="/" title="Travis C. Flatt"><img src="{{ URL::asset('img/logo_dark.png') }}" alt="inCreate Responsive Multipurpose HTML5"></a>
+              <a href="/" title="Travis C. Flatt"><img src="{{ URL::asset('img/tflatt001.png') }}" alt="inCreate Responsive Multipurpose HTML5"></a>
             </div>
 
             <div class="search">
@@ -218,7 +218,7 @@
     <footer id="footer">
       <div class="row pad_foot clearfix">
         <div class="grid_4">
-          <img src="{{ URL::asset('img/logo_dark.png') }}" alt="logo title" class="mb">
+          <img src="{{ URL::asset('img/tflatt001.png') }}" alt="logo title" class="mb">
 
           <div class="widget-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
