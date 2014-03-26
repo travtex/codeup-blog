@@ -1372,7 +1372,8 @@ li li a .sf-sub-indicator {
 
 .error_page {
 	height: 600px;
-	background: #0B0B0B url(/img/assets/404.jpg) repeat center;
+	background: #0B0B0B url(/img/assets/alien_planet.png) no-repeat;
+	background-size: cover;
 	margin-top: -110px;
 	text-align: center;
 }
