@@ -28,7 +28,7 @@
 		<div id="masonry-container" class="three-column transitions-enabled centered clearfix">
 			<div class="grid_12 posts">
 				@foreach ($posts as $post)
-					<div class="post">
+					<div class="post masonry-brick">
 						<div class="meta_box">
 							<h3><a href="#">{{{ $post->title }}}</a></h3>
 							<div class="post_meta">
