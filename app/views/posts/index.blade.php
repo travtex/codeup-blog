@@ -1,8 +1,17 @@
 @extends('layouts.master')
 
+@section('topscript')
+<style>
+.breadcrumb-place {
+	background: url(/img/assets/breadcrumb10.jpg) repeat center;
+
+}
+</style>
+@stop
+
 @section('content')
 
-<div class="breadcrumb-place" style="background: url(/img/assets/breadcrumb9.jpg) repeat center;">
+<div class="breadcrumb-place">
 	<div class="row clearfix">
 		<h3 class="page-title"> Computering is Hard </h3>
 		<div class="breadcrumbIn">

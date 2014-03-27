@@ -10,18 +10,17 @@
 				<div id="layerslider" style="width: 100%; height: 700px; margin: 0px auto">
 
 		<div class="ls-layer" style="slidedirection: top; transition2d: all; slidedelay: 5000; durationin: 1000; durationout: 1500; easingin: easeInQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">							
-			<img class="ls-bg" src="/img/slides/4.jpg" alt="">
-			<img class="ls-s2"  src="/img/slides/ip4.png" alt="" style="position: absolute; top: 100px; left: 60px; slidedirection : bottom; slideoutdirection : bottom;  durationin : 1000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
-			<img class="ls-s2"  src="/img/slides/cap_a1.png" alt="" style="position: absolute; top: 160px; left: 600px; slidedirection : top; slideoutdirection : top;  durationin : 2000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
-			<img class="ls-s2"  src="/img/slides/cap_a2.png" alt="" style="position: absolute; top: 290px; left: 600px; slidedirection : right; slideoutdirection : right;  durationin : 2500; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
-			<img class="ls-s2"  src="/img/slides/cap_a3.png" alt="" style="position: absolute; top: 410px; left: 600px; slidedirection : bottom; slideoutdirection : bottom;  durationin : 3000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
-			<img class="ls-s2"  src="/img/slides/cap_a3.png" alt="" style="position: absolute; top: 410px; left: 750px; slidedirection : bottom; slideoutdirection : bottom;  durationin : 3500; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+			<img class="ls-bg" src="/img/slides/beachtrav-blur.jpg" alt="">
+			<img class="ls-s2"  src="/img/slides/travflatt.png" alt="" style="position: absolute; top: 100px; left: 60px; slidedirection : bottom; slideoutdirection : bottom;  durationin : 1000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+			<img class="ls-s2"  src="/img/slides/sliderquote3.png" alt="" style="position: absolute; top: 210px; left: 590px; slidedirection : top; slideoutdirection : top;  durationin : 2000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+			<img class="ls-s2"  src="/img/slides/sliderquote1.png" alt="" style="position: absolute; top: 340px; left: 570px; slidedirection : right; slideoutdirection : right;  durationin : 2500; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+			
 		</div>
 
 		<div class="ls-layer" style="slidedirection: right; transition2d: all; slidedelay: 4500; durationin: 1000; durationout: 1500; easingin: easeInQuint; easingout: easeInOutQuint; delayin: 0; delayout: 0;">							
-			<img class="ls-bg" src="/img/slides/5.jpg" alt="">
-			<img class="ls-s2"  src="/img/slides/ip5.png" alt="" style="position: absolute; top: 53px; left: 500px; slidedirection : right; slideoutdirection : right;  durationin : 1000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
-			<img class="ls-s2"  src="/img/slides/cap_c1.png" alt="" style="position: absolute; top: 380px; left: 60px; slidedirection : bottom; slideoutdirection : bottom;  durationin : 1700; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+			<img class="ls-bg" src="/img/slides/quixotic-slider.jpg" alt="">
+			<img class="ls-s2"  src="/img/slides/creative.png" alt="" style="position: absolute; top: 53px; left: 500px; slidedirection : right; slideoutdirection : right;  durationin : 1000; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
+			<img class="ls-s2"  src="/img/slides/sliderquote4.png" alt="" style="position: absolute; top: 380px; left: 60px; slidedirection : bottom; slideoutdirection : bottom;  durationin : 1700; durationout : 750; easingin : easeInOutQuint; easingout : easeInBack; delayin : 500; delayout : 0; showuntil : 0; ">
 		</div>
 				</div>		
 			</div>
@@ -30,9 +29,9 @@
 
 		<div class="intro_p tac">
 			<div class="row inner clearfix">
-				<h2>Clean, Unique, Modern & Responsive HTML5 Template, Inspired iOS7 <small>Connect with us</small></h2>
-				<a href="#" class="tbutton large"><i class="icon_comment_alt"></i><span>Match Me To Advisors</span></a>
-				<a href="#" class="tbutton large m_left"><i class="icon_lightbulb_alt"></i><span>Do Your One Search</span></a>
+				<h2>Web Designer and Developer in San Antonio, TX <small>Connect with Trav</small></h2>
+				<a href="https://www.linkedin.com/in/travisflatt" target="_blank" class="tbutton large"><i class="fa-linkedin"></i><span>Connect on Linkedin</span></a>
+				<a href="https://github.com/travtex" target="_blank" class="tbutton large m_left"><i class="fa-github"></i><span>Follow on Github</span></a>
 			</div><!-- End row -->
 		</div><!-- End intro p -->
 

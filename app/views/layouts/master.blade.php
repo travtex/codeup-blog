@@ -221,7 +221,9 @@
           <img src="{{ URL::asset('img/tflatt001.png') }}" alt="logo title" class="mb">
 
           <div class="widget-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Travis C. Flatt is a Web Developer based in San Antonio, TX.  He is experienced in 
+              front-end and server-side development with a focus on user experience.  He also plays 
+              a pretty mean bass guitar.</p>
 
             <div class="social">
               <a href="https://twitter.com/StudioQuixotic" target="_blank" class="toptip" title="Twitter"><i class="fa-twitter"></i></a>
@@ -240,7 +242,7 @@
           <h3 class="col-title">Where's Trav?</h3>
 
           <div class="widget-content">
-            <iframe height="160" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=San+Antonio,+NY,+United+States&amp;aq=0&amp;oq=New+yok&amp;sll=37.0625,-95.677068&amp;sspn=41.224889,86.044922&amp;ie=UTF8&amp;hq=&amp;hnear=New+York&amp;t=m&amp;z=10&amp;ll=40.714353,-74.005973&amp;output=embed"></iframe>
+            <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d111052.9358642919!2d-98.46118942406842!3d29.562839252763997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395897581022" width="300" height="200" frameborder="0" style="border:0"></iframe>
           </div><!-- widget content -->
         </div><!-- grid 4 -->
   

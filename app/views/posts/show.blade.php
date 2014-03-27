@@ -1,15 +1,23 @@
 @extends('layouts.master')
 
+@section('topscript')
+<style>
+	.breadcrumb-place {
+		background: url(/img/assets/breadcrumb4.jpg) repeat center;
+	}
+</style>
+@stop
+
 @section('content')
 
-<div class="breadcrumb-place" class="background: url(/img/assets/breadcrumb4.jpg) repeat center;">
+<div class="breadcrumb-place"">
 				<div class="row clearfix">
-					<h3 class="page-title"> Neque porro quisquam est qui dolorem ipsum </h3>
+					<h3 class="page-title"> {{{ $post->title }}} </h3>
 					<div class="breadcrumbIn">
 						<ul>
 							<li><a href="index.html"><i class="icon_house_alt mi"></i> Home </a></li>
 							<li><a href="blog.html"> Blog </a></li>
-							<li> Neque porro quisquam est qui dolorem ipsum </li>
+							<li>{{{ $post->title }}}</li>
 						</ul>
 					</div><!-- breadcrumbIn -->
 				</div><!-- row -->
@@ -30,7 +38,7 @@
 									<span class="post_comments"> <a href="#"><i class="icon_comment_alt"></i> 17</a></span>
 								</div><!-- meta more -->
 							</div><!-- meta box -->
-							<div class="thumb_f"><a href="blog-single-image.html"><img src="images/assets/post1.jpg" alt="#"></a></div>
+							<div class="thumb_f"><a href="blog-single-image.html"><img src="/img/assets/post1.jpg" alt="#"></a></div>
 							<div class="post_content">
 								<p>{{{ $post->body }}}</p>
 
@@ -53,11 +61,11 @@
 						<div class="related_posts clearfix">
 							<h3 class="col-title mb"> Related Posts </h3>
 							<div class="grid_6">
-								<a href="blog_single_video.html"><img src="images/assets/post_related1.jpg" alt=""><span> On the other hand, we denounce </span></a>
+								<a href="blog_single_video.html"><img src="/img/assets/post_related1.jpg" alt=""><span> On the other hand, we denounce </span></a>
 							</div>
 
 							<div class="grid_6">
-								<a href="blog_single_slider.html"><img src="images/assets/post_related2.jpg" alt=""><span>Itaque earum rerum hic tenetur a sapiente dele tenetur </span></a>
+								<a href="blog_single_slider.html"><img src="/img/assets/post_related2.jpg" alt=""><span>Itaque earum rerum hic tenetur a sapiente dele tenetur </span></a>
 							</div>
 						</div>
 
@@ -128,22 +136,22 @@
 								<li id="popular" class="active">
 									<ul class="tab-content-items">
 										<li class="clearfix">
-											<a class="post-thumbnail" href="blog_single_slider.html"><img width="60" height="60" src="images/assets/portfolio1.jpg" alt="#"></a>
+											<a class="post-thumbnail" href="blog_single_slider.html"><img width="60" height="60" src="/img/assets/portfolio1.jpg" alt="#"></a>
 											<h3><a href="blog_single_slider.html">Next Elections Resolutions: What could be the worst?</a></h3>
 											<div class="post-meta"><span>27 January 2014</span></div>
 										</li>
 										<li class="clearfix">
-											<a class="post-thumbnail" href="blog_single_image.html"><img width="60" height="60" src="images/assets/portfolio2.jpg" alt="#"></a>
+											<a class="post-thumbnail" href="blog_single_image.html"><img width="60" height="60" src="/img/assets/portfolio2.jpg" alt="#"></a>
 											<h3><a href="blog_single_image.html">Praesent adipiscing mi eget ipsum imperdiet</a></h3>
 											<div class="post-meta"><span>24 January 2014</span></div>
 										</li>
 										<li class="clearfix">
-											<a class="post-thumbnail" href="blog_single_video.html"><img width="60" height="60" src="images/assets/portfolio3.jpg" alt="#"></a>
+											<a class="post-thumbnail" href="blog_single_video.html"><img width="60" height="60" src="/img/assets/portfolio3.jpg" alt="#"></a>
 											<h3><a href="blog_single_video.html">Paul Thomson on Post with SoundCloud</a></h3>
 											<div class="post-meta"><span>22 January 2014</span></div>
 										</li>
 										<li class="clearfix">
-											<a class="post-thumbnail" href="blog_single_video.html"><img width="60" height="60" src="images/assets/portfolio4.jpg" alt="#"></a>
+											<a class="post-thumbnail" href="blog_single_video.html"><img width="60" height="60" src="/img/assets/portfolio4.jpg" alt="#"></a>
 											<h3><a href="blog_single_video.html">Jackson on Post with Audio Track</a></h3>
 											<div class="post-meta"><span>30 January 2014</span></div>
 										</li>
@@ -152,15 +160,15 @@
 								<li id="comments">
 									<ul class="tab-content-items">
 										<li class="clearfix">
-											<a class="post-thumbnail" href="#"><img width="60" height="60" src="images/assets/avatar1.jpg" alt="#"></a>
+											<a class="post-thumbnail" href="#"><img width="60" height="60" src="/img/assets/avatar1.jpg" alt="#"></a>
 											<p><strong><a href="#">Alexander</a> <i>says:</i></strong> Itaque earum rerum hic tenetur a sapiente delectus</p>
 										</li>
 										<li class="clearfix">
-											<a class="post-thumbnail" href="#"><img width="60" height="60" src="images/assets/avatar2.jpg" alt="#"></a>
+											<a class="post-thumbnail" href="#"><img width="60" height="60" src="/img/assets/avatar2.jpg" alt="#"></a>
 											<p><strong><a href="#">Xina</a> <i>says:</i></strong> Sapiente delectus, ut aut reiciendis itaque earum vem.</p>
 										</li>
 										<li class="clearfix">
-											<a class="post-thumbnail" href="#"><img width="60" height="60" src="images/assets/avatar3.jpg" alt="#"></a>
+											<a class="post-thumbnail" href="#"><img width="60" height="60" src="/img/assets/avatar3.jpg" alt="#"></a>
 											<p><strong><a href="#">Michele</a> <i>says:</i></strong> Tenetur a sapiente delectus, ut aut </p>
 										</li>
 									</ul>
@@ -172,12 +180,7 @@
 							<h3 class="col-title"> Text Widget </h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 						</div><!-- widget instagram -->
-	
-						<div class="widget ads">
-							<h3 class="col-title"> Ads </h3><span class="liner"></span>
-							<a href="#" class="#" title="Advertise"><img src="images/ads1.gif" alt="#"></a>
-						</div><!-- widget ads -->
-	
+							
 					</div><!-- sidebar -->
 	
 				</div><!-- row -->
