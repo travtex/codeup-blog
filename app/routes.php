@@ -15,8 +15,8 @@ Route::get('/', 'HomeController@showWelcome');
 
 Route::get('orm-test', function() {
     // $post1 = new Post();
-    // $post1->title = "Another New Post";
-    // $post1->body = "The post that is this post is about posty things.";
+    // $post1->title = "Third Seed";
+    // $post1->body = "A third post, because I'm looking at two and three-column layouts for the blog.";
     // $post1->save();
 });
 
