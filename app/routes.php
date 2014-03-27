@@ -24,7 +24,5 @@ Route::get('resume', 'HomeController@showResume');
 
 Route::get('portfolio', 'HomeController@showPortfolio');
 
-Route::get('blog/{id}', 'PostsController@show');
-
-Route::resource('blog', 'PostsController@index');
+Route::resource('blog', 'PostsController');
 

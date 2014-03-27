@@ -4,7 +4,7 @@
 @section('topscript')
 <style>
 	.breadcrumb-place {
-		background: url(/img/assets/breadcrumb8.jpg) repeat center;
+		background: url(/img/assets/breadcrumb12.jpg) repeat center;
 	}
 </style>
 
@@ -15,12 +15,12 @@
 
 <div class="breadcrumb-place">
 	<div class="row clearfix">
-		<h3 class="page-title"> Create New Blog Post </h3>
+		<h3 class="page-title"> Edit Blog Post </h3>
 		<div class="breadcrumbIn">
 			<ul>
 				<li><a href="/"><i class="icon_house_alt mi"></i> Home </a></li>
 				<li><a href="/blog"> Blog </a></li>
-				<li>Create New Post</li>
+				<li>Edit Post</li>
 			</ul>
 		</div><!-- breadcrumbIn -->
 	</div><!-- row -->
@@ -29,10 +29,10 @@
 <div class="page-content">
 		<div class="row clearfix">
 			<div class="grid_8 contact_c">
-				<h3 class="col-title"> Create New Post </h3>
+				<h3 class="col-title"> Edit Post </h3>
 				<p> Title and Body fields are required. </p>
 
-				{{ Form::model(new Post(), array('action' => 'PostsController@store')) }}
+				{{ Form::model($post, array('action' => array('PostsController@edit', $post->id))) }}
 					<div class="clearfix">
 						{{ $errors->has('title') ? $errors->first('title', '<h3 class=\'col-title\'>Must have a title.</h3>') : ''}}
 						<div class="grid_12 alpha fll">
@@ -47,7 +47,7 @@
 										'placeholder' => 'Body *',
 										'class' => 'requiredField form-textarea'
 					        ))}}
-					<input type="submit" class="send-button" name="submit" value="Create Post">
+					<input type="submit" class="send-button" name="submit" value="Edit Post">
 					</div>
 					
 				{{Form::close()}}

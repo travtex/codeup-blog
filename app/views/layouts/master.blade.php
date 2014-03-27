@@ -14,20 +14,20 @@
     <meta name="keywords" content="trav travis flatt web design developer designer graphic san antonio texas resume portfolio">
 
   <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/custom-bootstrap.css') }}"
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/bootstrap.min.css') }}" media="screen" />
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/style.css') }}" media="screen" />
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/styles/shop.css') }}" media="screen" />
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/styles/icons.css') }}" media="screen" />
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/styles/animate.css') }}" media="screen" />
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/styles/responsive.css') }}" media="screen" />
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/js/layerslider/css/layerslider.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/js/layerslider/css/custom.css') }}">
+    <link rel="stylesheet" type="text/css" href="/css/custom-bootstrap.css"
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/styles/shop.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/styles/icons.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/styles/animate.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/styles/responsive.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/js/layerslider/css/layerslider.css">
+    <link rel="stylesheet" type="text/css" href="/js/layerslider/css/custom.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
   <!-- CustomStyles -->
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/styles/dark.css') }}" id="dark" media="screen">
-    <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/colors/asphalt.css') }}" media="screen" class="emerald">
+    <link rel="stylesheet" type="text/css" href="/styles/dark.css" id="dark" media="screen">
+    <link rel="stylesheet" type="text/css" href="/css/colors/asphalt.css" media="screen" class="emerald">
     <style>body {background: url(/img/backgrounds/1.jpg) fixed}</style>
 
   <!-- Favicon -->
@@ -282,16 +282,16 @@
 </div> <!-- end frame -->
 
     
-    <script type="text/javascript" src="{{ URL::asset('js/jquery.min.js') }}"></script>
-    <script type="text/javascript" src="{{ URL::asset('js/bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="{{ URL::asset('js/theme20.js') }}"></script>
-    <script type="text/javascript" src="{{ URL::asset('js/jquery.prettyPhoto.js') }}"></script>
-    <script type="text/javascript" src="{{ URL::asset('js/jquery.flexslider-min.js') }}"></script>
-    <script type="text/javascript" src="{{ URL::asset('js/custom.js') }}"></script>
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/theme20.js"></script>
+    <script type="text/javascript" src="/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="/js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
 
-    <script src="{{ URL::asset('js/layerslider/jQuery/jquery-transit-modified.js') }}" type="text/javascript"></script>
-    <script src="{{ URL::asset('js/layerslider/js/layerslider.transitions.js') }}" type="text/javascript"></script>
-    <script src="{{ URL::asset('js/layerslider/js/layerslider.kreaturamedia.jquery.js') }}" type="text/javascript"></script>
+    <script src="/js/layerslider/jQuery/jquery-transit-modified.js" type="text/javascript"></script>
+    <script src="/js/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="/js/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
     @yield('bottomscript')
 </body>
 </html>

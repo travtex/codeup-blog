@@ -7,7 +7,7 @@ a:hover, .tbutton:hover, #header .search button, .custom_block1 li.active a, .cu
 }
 .progress-bar span, .tipsy-inner, #mobilepro, .shop .product .sale, .sf-menu li.current > a, .sf-menu > li:hover > a, .sf-menu > li > a:hover, .sf-menu ul li, ul.mega, .tbutton, .services [class^="grid_"]:hover .tbutton,
 .services [class^="grid_"]:hover .s_icon span, .f_portfolio .f_hover, .portfolio .f_hover, .tabs li a.active, .accordion-head-sign, .toggle-head-sign, .f_blog .f_hover, .big-slider h3, .big-slider p, .featured_table .recommended,
-.mslider-arrow:hover, .iview-caption.caption4, .ui-slider .ui-slider-handle, .ui-widget-header, #filter_button:hover, .pagination-tt ul li a:hover, .pagination-tt ul li.current span, #contactForm #sendMessage:hover, #sendOrder:hover,
+.mslider-arrow:hover, .iview-caption.caption4, .ui-slider .ui-slider-handle, .ui-widget-header, #filter_button:hover, .pagination-tt ul li a:hover, .pagination-tt ul li.current span, #contactForm #sendMessage:hover, .send-button:hover, #sendOrder:hover,
 #login_form_increate #login_button:hover, #register_form_increate #register_button:hover, .table th, .table tfoot td, .tags a:hover, .filterable li.current a, .filterable li a:hover, .load_more_portfolio a:hover, .project_links a:hover i, 
 .post-links a:hover i, .related_posts a:hover span, ul.showcomments .reply a:hover, #commentform .send-message:hover, .xactive {
 	background-color: #34495e
@@ -15,7 +15,7 @@ a:hover, .tbutton:hover, #header .search button, .custom_block1 li.active a, .cu
 .sf-menu li.current > a, .sf-menu > li:hover > a, .sf-menu > li > a:hover, .tbutton:hover, .languages a:hover, .languages:hover > a, .other_languages, .services [class^="grid_"]:hover .tbutton:hover,
 .services [class^="grid_"]:hover .tbutton, .custom_block2 li.active img, .tabs li a.active, #toTop:hover, .f_portfolio .nexte:hover, .f_portfolio .preve:hover, .custom_block2 ul, .featured_table, .labele, #filter_button:hover, 
 .pagination-tt ul li a:hover, .pagination-tt ul li.current span, .widget #searchwidget input:focus, #newsletters input:focus, .coupon_input:focus, .quantity input.qty:focus, #content .quantity input.qty:focus, 
-#track_input:focus, #contactForm #senderName:focus, #contactForm #senderEmail:focus, #contactForm #message:focus, #contactForm #sendMessage:hover, #sendOrder:hover, #login_form_increate #login_input:focus, 
+#track_input:focus, .form-input:focus, #contactForm #senderName:focus, #contactForm #senderEmail:focus, #contactForm #message:focus, #contactForm #sendMessage:hover, #sendOrder:hover, #login_form_increate #login_input:focus, 
 #register_form_increate #register_input:focus, #login_form_increate #login_button:hover, #register_form_increate #register_button:hover, .widget .list li.current a, .widget .list li:hover a, .tags a:hover, 
 .filterable li.current a, .filterable li a:hover, .load_more_portfolio a:hover, ul.showcomments .reply a:hover, #commentform .send-message:hover, #commentform textarea:focus, #commentform input:focus {
 	border-color: #34495e

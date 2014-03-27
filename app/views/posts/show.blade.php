@@ -10,18 +10,18 @@
 
 @section('content')
 
-<div class="breadcrumb-place"">
-				<div class="row clearfix">
-					<h3 class="page-title"> {{{ $post->title }}} </h3>
-					<div class="breadcrumbIn">
-						<ul>
-							<li><a href="index.html"><i class="icon_house_alt mi"></i> Home </a></li>
-							<li><a href="blog.html"> Blog </a></li>
-							<li>{{{ $post->title }}}</li>
-						</ul>
-					</div><!-- breadcrumbIn -->
-				</div><!-- row -->
-			</div><!-- end breadcrumb place -->
+<div class="breadcrumb-place">
+	<div class="row clearfix">
+		<h3 class="page-title"> {{{ $post->title }}} </h3>
+		<div class="breadcrumbIn">
+			<ul>
+				<li><a href="/"><i class="icon_house_alt mi"></i> Home </a></li>
+				<li><a href="/blog"> Blog </a></li>
+				<li>{{{ $post->title }}}</li>
+			</ul>
+		</div><!-- breadcrumbIn -->
+	</div><!-- row -->
+</div><!-- end breadcrumb place -->
 
 <div class="page-content">
 				<div class="row clearfix mbs">

@@ -319,7 +319,7 @@ jQuery(document).ready(function ($) {
 					if (!emailReg.test(jQuery.trim($(this).val()))) {
 						var labelText = $(this).prev('label').text();
 						$(this).addClass('fielderror');
-						$('#contactForm span').html('<strong>Is incorrect your email address</strong>');
+						$('#contactForm span').html('<strong>Invalid e-mail address.</strong>');
 						hasError = true;
 					}
 				}
@@ -327,12 +327,12 @@ jQuery(document).ready(function ($) {
 			if (!hasError) {
 				$('#contactForm').slideDown('normal', function () {
 					$("#contactForm #sendMessage").addClass('load-color');
-					$("#contactForm #sendMessage").attr("disabled", "disabled").addClass("btn-success").val('Sending message. Please wait...');
+					$("#contactForm #sendMessage").attr("disabled", "disabled").addClass("btn-success").val('Sending. Please wait...');
 				});
 				var formInput = $(this).serialize();
 				$.post($(this).attr('action'), formInput, function (data) {
 					$('#contactForm').slideUp("normal", function () {
-						$(this).before('<div class="notification-box notification-box-success"><p><i class="fa-check"></i>Thanks!</strong> Your email was successfully sent. We check Our email all the time.</p></div>');
+						$(this).before('<div class="notification-box notification-box-success"><p><i class="fa-check"></i>Thanks!</strong> Successfully Sent.</p></div>');
 					});
 				});
 			}

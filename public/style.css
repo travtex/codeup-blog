@@ -732,7 +732,7 @@ textarea {
 	color: #fff;
 	margin: 0 10px 0 0
 }
-#track_input, 
+#track_input, .form-input,
 #contactForm #senderName, 
 #contactForm #senderEmail {
 	display: block;
@@ -749,7 +749,7 @@ textarea {
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
-#contactForm #message {
+#contactForm #message, .form-textarea {
 	display: block;
 	width: 100%;
 	border: 1px solid #EAEAEA;
@@ -762,10 +762,10 @@ textarea {
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 }
-#track_input:focus, 
+#track_input:focus, .form-input:focus,
 #contactForm #senderName:focus, 
 #contactForm #senderEmail:focus, 
-#contactForm #message:focus {
+#contactForm #message:focus, .form-textarea:focus {
 	background: #fff;
 	border: 1px solid #5486DA;
 }
@@ -788,7 +788,7 @@ textarea {
 .fielderror {
 	border-color: #F00 !important;
 }
-#contactForm #sendMessage, #sendOrder {
+#contactForm #sendMessage, #sendOrder, .send-button {
 	width: auto;
 	margin-top: 10px;
 	float: right;
@@ -808,7 +808,7 @@ textarea {
 #sendOrder {
 	border: 1px solid #DFDFDF
 }
-#contactForm #sendMessage:hover, #sendOrder:hover {
+#contactForm #sendMessage:hover, #sendOrder:hover, .send-button:hover {
 	background: #5486DA;
 	color: #fff;
 	border-color: #5486DA

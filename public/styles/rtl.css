@@ -3,7 +3,7 @@ body { direction: rtl }
 .col3 .col1, .col2, .col3, .logo, .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .tabs li, .social a, .foot-menu li {
 	float: right
 }
-.sf-menu, .sidebar .rating, ul.showcomments span.date, .coupon_button, #contactForm #sendMessage, #sendOrder, .widget .list li a span {float: left}
+.sf-menu, .sidebar .rating, ul.showcomments span.date, .coupon_button, #contactForm #sendMessage, .send-button, #sendOrder, .widget .list li a span {float: left}
 .alpha {
 	margin-left: 1% !important;
 	margin-right: 0 !important;

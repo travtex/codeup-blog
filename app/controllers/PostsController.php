@@ -32,15 +32,22 @@ class PostsController extends \BaseController {
 	public function store()
 	{
 		// Save to DB
-		Log::info(Input::all());
+		$validator = Validator::make(Input::all(), Post::$rules);
 
-		$post = new Post();
-		$post->title = Input::get('title');
-		$post->body = Input::get('body');
+		if($validator->fails()) {
 
-		$post->save();
+			return Redirect::back()->withInput()->withErrors($validator);
+			// failed
+		} else {
 
-		return Redirect::action('PostsController@index');
+			$post = new Post();
+			$post->title = Input::get('title');
+			$post->body = Input::get('body');
+
+			$post->save();
+			return Redirect::action('PostsController@index');
+		}
+
 
 		//return Redirect::back()->withInput();
 	}
@@ -54,7 +61,7 @@ class PostsController extends \BaseController {
 	public function show($id)
 	{
 		// Show a post
-		$post = Post::find($id);
+		$post = Post::findOrFail($id);
 		return View::make('posts.show')->with('post', $post);
 	}
 
@@ -67,7 +74,8 @@ class PostsController extends \BaseController {
 	public function edit($id)
 	{
 		//
-		return 'Edit function';
+		$post = Post::findOrFail($id);
+		return View::make('posts.edit')->with('post', $post);
 	}
 
 	/**

@@ -24,8 +24,8 @@ a, .sf-menu a, .search_icon, .header_bag a:hover, .shopping_bag:hover .header_ba
 .set_two [class^="grid_"]:before, .pricing-table .price-content, .product_meta a:hover {background: none}
 .view_cart {border: 1px solid #2B2B2B;background: #222}
 .pricing-table, .package-content li, .shop .product, .shop .product_meta {border-color: #7E7E7E}
-.widget #searchwidget input, #newsletters input, .coupon_input, #login_form_increate #login_input, #register_form_increate #register_input, #track_input, #contactForm #senderName, #contactForm #senderEmail,
-#contactForm #message, #commentform input, #commentform textarea {border: 1px solid #444040;background: #2C2C2C}
+.widget #searchwidget input, #newsletters input, .coupon_input, #login_form_increate #login_input, #register_form_increate #register_input, #track_input, #contactForm #senderName, .form-input, #contactForm #senderEmail,
+#contactForm #message, .form-textarea, #commentform input, #commentform textarea {border: 1px solid #444040;background: #2C2C2C}
 table.shop_table th, .woocommerce table.shop_table th, table.gbtr_order_details tr:last-child td, .woocommerce table.gbtr_order_details tr:last-child td, .dropcap-border {border-bottom-color: #FFF}
 .circular a, .circular a i, .circular a:hover, .circular a:hover i {border: 1px solid rgba(0, 0, 0, 0)}
 .text_block {background: #0F0F0F}
