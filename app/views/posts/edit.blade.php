@@ -32,7 +32,7 @@
 				<h3 class="col-title"> Edit Post </h3>
 				<p> Title and Body fields are required. </p>
 
-				{{ Form::model($post, array('action' => array('PostsController@edit', $post->id))) }}
+				{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
 					<div class="clearfix">
 						{{ $errors->has('title') ? $errors->first('title', '<h3 class=\'col-title\'>Must have a title.</h3>') : ''}}
 						<div class="grid_12 alpha fll">
