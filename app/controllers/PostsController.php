@@ -9,7 +9,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::paginate(5);
+		$posts = Post::orderBy('created_at', 'desc')->paginate(5);
 		return View::make('posts.index')->with('posts', $posts);
 	}
 
@@ -35,7 +35,7 @@ class PostsController extends \BaseController {
 		$validator = Validator::make(Input::all(), Post::$rules);
 
 		if($validator->fails()) {
-
+			Session::flash('errorMessage', 'Post not created - please fix form errors.');
 			return Redirect::back()->withInput()->withErrors($validator);
 			// failed
 		} else {
@@ -45,6 +45,7 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 
 			$post->save();
+			Session::flash('successMessage', 'Post created successfully.');
 			return Redirect::action('PostsController@index');
 		}
 
@@ -92,6 +93,7 @@ class PostsController extends \BaseController {
 
 		if($validator->fails()) {
 
+			Session::flash('errorMessage', 'Post not edited - please fix form errors.');
 			return Redirect::back()->withInput()->withErrors($validator);
 			// failed
 		} else {
@@ -100,6 +102,7 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 
 			$post->save();
+			Session::flash('successMessage', 'Post edited successfully.');
 			return Redirect::action('PostsController@show', $id);
 		}
 	}

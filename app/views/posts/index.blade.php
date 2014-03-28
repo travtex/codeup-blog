@@ -24,6 +24,7 @@
 </div><!-- end breadcrumb place -->
 
 <div class="page-content">
+
 		<div class="row clearfix mbs">
 			<div class="grid_9 posts m_thumbnails s_thumbnails">
 				
@@ -35,13 +36,13 @@
 							<h3> <a href="{{{ action('PostsController@show', $post->id)}}}">{{{$post->title}}}</a> </h3>
 							<div class="post_meta">
 								<span><i class="icon_profile"></i> <a href="#">Author</a></span>
-								<span><i class="icon_clock_alt"></i> <a href="#">Date goes Here</a></span>
+								<span><i class="icon_clock_alt"></i> <a href="#"> {{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i A')}} </a></span>
 								<span><i class="icon_link_alt"></i> in <a href="#">news</a>, <a href="#">photo</a>, <a href="#">3d</a></span>
 								<span class="post_comments"> <a href="#"><i class="icon_comment_alt"></i> 17</a></span>
 							</div><!-- meta -->
 						</div><!-- meta box -->
 						<div class="post_content">
-							<p>{{{$post->body}}} ...<a href="{{{action('PostsController@show', $post->id)}}}" class="post_more">Read More ></a></p>
+							<p>{{ Str::words($post->body, 5)}} <a href="{{{action('PostsController@show', $post->id)}}}" class="post_more">Read More ></a></p>
 						</div>
 					</div>
 				</div><!-- post image -->

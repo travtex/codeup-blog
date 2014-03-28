@@ -24,6 +24,7 @@
 </div><!-- end breadcrumb place -->
 
 <div class="page-content">
+	
 				<div class="row clearfix mbs">
 					<div class="grid_9 posts">
 
@@ -33,7 +34,7 @@
 								<h3> <a href="">{{{ $post->title }}}</a> </h3>
 								<div class="post_meta">
 									<span><i class="icon_profile"></i> <a href="#">behzad</a></span>
-									<span><i class="icon_clock_alt"></i> <a href="#">27 Aug, 2013</a></span>
+									<span><i class="icon_clock_alt"></i> <a href="#"> {{$post->created_at->setTimezone('America/Chicago')->format('l, F jS Y @ h:i A')}} </a></span>
 									<span><i class="icon_link_alt"></i> in <a href="#">news</a>, <a href="#">photo</a>, <a href="#">3d</a></span>
 									<span class="post_comments"> <a href="#"><i class="icon_comment_alt"></i> 17</a></span>
 								</div><!-- meta more -->
@@ -87,6 +88,7 @@
 							/* ]]> */
 							</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 						<!-- Disqus Comment Form -->
+
 
 					</div><!-- posts -->
 	

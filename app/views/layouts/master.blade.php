@@ -41,6 +41,7 @@
   @yield('topscript')
 </head>
 <body>
+
   <div id="frame_">
     <div id="layout" class="boxed-margin">
       <header id="header">
@@ -193,6 +194,12 @@
       </header><!-- end header -->
     
     @yield('content')
+  @if (Session::has('successMessage'))
+    <div class="alert alert-success">{{{ Session::get('successMessage') }}}</div>
+  @endif
+  @if (Session::has('errorMessage'))
+    <div class="alert alert-danger">{{{ Session::get('errorMessage') }}}</div>
+  @endif
 
     <footer id="footer">
       <div class="row pad_foot clearfix">
