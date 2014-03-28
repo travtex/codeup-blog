@@ -43,6 +43,11 @@
 								<p>{{{ $post->body }}}</p>
 
 							</div>
+							<a href="{{{action('PostsController@edit', $post->id)}}}">Edit Link</a>
+
+							{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'delete', 'id' => 'formDeletePost')) }}
+							{{ Form::close() }}
+							<a href="#" id="btnDeletePost">Delete Link</a>
 						</div><!-- post image -->
 
 						<div class="post_share tac">
@@ -188,3 +193,17 @@
 
 @stop
 
+@section('bottomscript')
+
+<script>
+
+$('#btnDeletePost').on('click', function(e) {
+	e.preventDefault();
+	if(confirm('Are you sure you want to delete this post?')) {
+		$('#formDeletePost').submit();
+	}
+});
+
+</script>
+
+@stop

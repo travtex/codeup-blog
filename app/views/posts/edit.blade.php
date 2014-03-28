@@ -34,19 +34,8 @@
 
 				{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
 					<div class="clearfix">
-						{{ $errors->has('title') ? $errors->first('title', '<h3 class=\'col-title\'>Must have a title.</h3>') : ''}}
-						<div class="grid_12 alpha fll">
-							
-							{{ Form::text('title', $value = null, $attributes = array (
-										'placeholder' => 'Title *',
-										'class' => 'requiredField form-input'
-							))}}
-						</div>
-						{{ $errors->has('body') ? $errors->first('body', '<h3 class=\'col-title\'>Must have body content.</h3>') : ''}}
-					        {{ Form::textarea('body', $value = null, $attributes = array (
-										'placeholder' => 'Body *',
-										'class' => 'requiredField form-textarea'
-					        ))}}
+						{{ $errors->first('title', '<h3 class=\'col-title\'>Must have a title.</h3>')}}
+							@include('posts.form')
 					<input type="submit" class="send-button" name="submit" value="Edit Post">
 					</div>
 					

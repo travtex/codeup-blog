@@ -113,7 +113,10 @@ class PostsController extends \BaseController {
 	public function destroy($id)
 	{
 		//
-		return 'Destroy function';
+		$post = Post::findOrFail($id);
+		$post->delete();
+
+		return Redirect::action('PostsController@index');
 	}
 
 }
