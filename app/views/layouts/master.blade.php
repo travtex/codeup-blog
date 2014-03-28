@@ -182,28 +182,7 @@
                     <li><a href="portfolio_single_sidebar.html">Project with Sidebar</a></li>
                   </ul>
                 </li>
-                <li><a href="blog.html">Blog</a>
-                  <ul>
-                    <li><a href="blog.html">Large Thumbnail</a></li>
-                    <li><a href="blog_medium.html">Medium Thumbnail</a></li>
-                    <li><a href="blog_small.html">Small Thumbnail</a></li>
-                    <li><a href="blog_left_sidebar.html">Blog Left Sidebar</a></li>
-                    <li><a href="blog_both_sidebar.html">Blog Both Sidebar</a></li>
-                    <li><a href="blog_both_sidebar_left.html">Both Sidebar Left</a></li>
-                    <li><a href="blog_both_sidebar_right.html">Both Sidebar Right</a></li>
-                    <li><a href="#">Blog Single Post</a>
-                      <ul>
-                        <li><a href="blog_single_image.html">Single Post Image</a></li>
-                        <li><a href="blog_single_slider.html">Single Post Slider</a></li>
-                        <li><a href="blog_single_video.html">Single Post Video</a></li>
-                        <li><a href="blog_single_sound.html">Single Post Sound</a></li>
-                        <li><a href="blog_single_facebook_comments.html">Facebook Comments</a></li>
-                        <li><a href="blog_single_default_comments.html">Default Comments</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="blog_two_columns.html">Blog Two Columns</a></li>
-                    <li><a href="blog_three_columns.html">Blog Three Columns</a></li>
-                  </ul>
+                <li><a href="/blog">Blog</a>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
               </ul><!-- end menu -->
@@ -292,6 +271,7 @@
     <script src="/js/layerslider/jQuery/jquery-transit-modified.js" type="text/javascript"></script>
     <script src="/js/layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
     <script src="/js/layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+    <script src="/js/bootbox.min.js"></script>
     @yield('bottomscript')
 </body>
 </html>

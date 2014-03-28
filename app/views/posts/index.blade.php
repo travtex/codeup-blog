@@ -50,17 +50,8 @@
 				<a href="{{{ action('PostsController@create')}}}">Create New Post</a>
 
 				<div class="pagination-tt clearfix">
-					<ul>
-						<li><a href="#"> <i class="arrow_left"></i> </a></li>
-						<li class="current"><span>1</span></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><span>...</span></li>
-						<li><a href="#">27</a></li>
-						<li><a href="#"> <i class="arrow_right"></i> </a></li>
-					</ul>
+					{{ $posts->links() }}
+					
 				</div><!-- pagination -->
 			</div><!-- posts -->
 
