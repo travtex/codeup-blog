@@ -65,20 +65,20 @@
 							<h3>- Some Recent Projects</h3>
 							<ul>
 								<li><a href="#custom_1"><i class="icon_box-checked"></i> Martial arts studio website (Squarespace)</a></li>
-								<li><a href="#custom_2"><i class="icon_box-checked"></i> Alient planet, designed in GIMP.</a></li>
+								<li><a href="#custom_2"><i class="icon_box-checked"></i> Javascript Blackjack, with custom designed cards.</a></li>
 								<li><a href="#custom_3"><i class="icon_box-checked"></i> Gradient preview tool (With fun add-on feature)</a></li>
-								<li><a href="#custom_4"><i class="icon_box-checked"></i> Posuere sollicitudin eu tincidunt nulla loremo ipsum</a></li>
-								<li><a href="#custom_5"><i class="icon_box-checked"></i> Eget diam posuere sollicitudin eu tincidunt nulla</a></li>
+								<li><a href="#custom_4"><i class="icon_box-checked"></i> jQuery whack-a-mole game (With custom cursor)</a></li>
+								<li><a href="#custom_5"><i class="icon_box-checked"></i> Javascript-based Simon Says game (With obnoxious sound effects)</a></li>
 							</ul>
 						</div><!-- end inner -->
 					</div><!-- end grid6 -->
 
 					<div class="grid_6 custom_block1_img" data-gen="bigEntrance">
 						<div class="h_slider"><img class="custom_1 imaw_tx" src="http://studioquixotic.com/wp-content/uploads/2013/11/imaw_site.png" alt="imaw"></div>
-						<div class="h_slider"><img class="custom_2" src="http://studioquixotic.com/wp-content/uploads/2013/11/alienplanet1.png" alt="planet"></div>
-						<div class="h_slider"><img class="custom_3" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn1/v/t1.0-9/1009881_10203468297618443_1695424007_n.jpg?oh=5f098240d716fa577a8a73a0a6463f3a&oe=53960F8B&__gda__=1403534206_d7395bb128765215808418ef541d90cb" alt="tablet"></div>
-						<div class="h_slider"><img class="custom_4" src="/img/assets/t4.png" alt="tablet"></div>
-						<div class="h_slider"><img class="custom_5" src="/img/assets/t5.png" alt="tablet"></div>
+						<div class="h_slider"><img class="custom_2" src="https://scontent-b.xx.fbcdn.net/hphotos-prn1/t1.0-9/10176098_10203470558034952_172032400_n.jpg" alt="blackjack"></div>
+						<div class="h_slider"><img class="custom_3" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn1/v/t1.0-9/1009881_10203468297618443_1695424007_n.jpg?oh=5f098240d716fa577a8a73a0a6463f3a&oe=53960F8B&__gda__=1403534206_d7395bb128765215808418ef541d90cb" alt="gradient"></div>
+						<div class="h_slider"><img class="custom_4" src="https://scontent-b.xx.fbcdn.net/hphotos-prn1/l/t1.0-9/1238715_10203470574675368_1067989605_n.jpg" alt="mole"></div>
+						<div class="h_slider"><img class="custom_5" src="https://scontent-a.xx.fbcdn.net/hphotos-prn2/t1.0-9/1467313_10203470585715644_1135056691_n.jpg" alt="simon"></div>
 					</div><!-- end grid6 -->
 				</div><!-- end row -->
 			</div><!-- end grey line -->
@@ -87,7 +87,7 @@
 				<div class="f_portfolio">
 					<div class="intro_content">
 						<div class="inner">
-							<h3> LATEST PROJECTS </h3>
+							<h3> Graphic Design </h3>
 							<p> Print this page to PDF for the complete set of vectors. Or to use on the desktop, install FontAwesome.otf and copy and paste .. <a href="portfolio4.html">View All</a></p>
 						</div>
 					</div>
@@ -96,56 +96,56 @@
 							<div class="anyClass">
 								<ul>
 									<li>
-										<img src="/img/assets/portfolio1.jpg" alt="#">
+										<img src="https://scontent-a.xx.fbcdn.net/hphotos-frc3/t1.0-9/1463434_10202348945115330_1532259427_n.jpg" alt="sunset">
 										<div class="f_hover">
 											<div class="f_links">
-												<a class="tbutton small" href="/img/assets/portfolio1.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
+												<a class="tbutton small" href="https://scontent-a.xx.fbcdn.net/hphotos-frc3/t1.0-9/1463434_10202348945115330_1532259427_n.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
 												<a class="tbutton small" href="portfolio_single.html"><span>More Details</span></a>
 											</div>
-											<h5> <a href="portfolio_single.html">Portfolio Project Title Here</a> </h5>
+											<h5> <a href="portfolio_single.html">Digital Sunset</a> </h5>
 										</div>
 									</li><!-- portfolio item -->
 									<li>
-										<img src="img/assets/portfolio2.jpg" alt="#">
+										<img src="http://studioquixotic.com/wp-content/uploads/2013/11/alienplanet1.png" alt="planet">
 										<div class="f_hover">
 											<div class="f_links">
-												<a class="tbutton small" href="/img/assets/portfolio2.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
+												<a class="tbutton small" href="http://studioquixotic.com/wp-content/uploads/2013/11/alienplanet1.png" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
 												<a class="tbutton small" href="portfolio_single.html"><span>More Details</span></a>
 											</div>
-											<h5> <a href="portfolio_single.html">Portfolio Project Title Here</a> </h5>
+											<h5> <a href="portfolio_single.html">Alien Planet</a> </h5>
 										</div>
 									</li><!-- portfolio item -->
 									<li>
-										<img src="img/assets/portfolio3.jpg" alt="#">
+										<img src="https://scontent-a.xx.fbcdn.net/hphotos-frc1/t1.0-9/10003920_10203463780425516_864460205_n.jpg" alt="wolf">
 										<div class="f_hover">
 											<div class="f_links">
-												<a class="tbutton small" href="/img/assets/portfolio3.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
+												<a class="tbutton small" href="https://scontent-a.xx.fbcdn.net/hphotos-frc1/t1.0-9/10003920_10203463780425516_864460205_n.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
 												<a class="tbutton small" href="portfolio_single.html"><span>More Details</span></a>
 											</div>
-											<h5> <a href="portfolio_single.html">Portfolio Project Title Here</a> </h5>
+											<h5> <a href="portfolio_single.html">Type with Fur</a> </h5>
 										</div>
 									</li><!-- portfolio item -->
 									<li>
-										<img src="img/assets/portfolio4.jpg" alt="#">
+										<img src="http://studioquixotic.com/wp-content/uploads/2013/11/photo_retouch.jpg" alt="retouch">
 										<div class="f_hover">
 											<h5> <a href="#">Sed ut perspiciatis unde</a> </h5>
 										<div class="f_hover">
 											<div class="f_links">
-												<a class="tbutton small" href="/img/assets/portfolio4.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
+												<a class="tbutton small" href="http://studioquixotic.com/wp-content/uploads/2013/11/photo_retouch.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
 												<a class="tbutton small" href="portfolio_single.html"><span>More Details</span></a>
 											</div>
-											<h5> <a href="portfolio_single.html">Portfolio Project Title Here</a> </h5>
+											<h5> <a href="portfolio_single.html">Photo Retouching</a> </h5>
 										</div>
 										</div>
 									</li><!-- portfolio item -->
 									<li>
-										<img src="img/assets/portfolio5.jpg" alt="#">
+										<img src="http://studioquixotic.com/wp-content/uploads/2013/11/zombiehand.png" alt="zombies">
 										<div class="f_hover">
 											<div class="f_links">
-												<a class="tbutton small" href="/img/assets/portfolio5.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
+												<a class="tbutton small" href="http://studioquixotic.com/wp-content/uploads/2013/11/zombiehand.png" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
 												<a class="tbutton small" href="portfolio_single.html"><span>More Details</span></a>
 											</div>
-											<h5> <a href="portfolio_single.html">Portfolio Project Title Here</a> </h5>
+											<h5> <a href="portfolio_single.html">Halloween Zombie Hand</a> </h5>
 										</div>
 									</li><!-- portfolio item -->
 									<li>
