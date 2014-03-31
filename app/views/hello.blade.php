@@ -39,38 +39,20 @@
 			<div class="services set_two mbs">
 				<div class="row clearfix">
 					<div class="grid_6 mbf">
-						<div class="s_icon"><i class="icon_documents_alt"></i><span class="fa-check"></span></div>
+						<div class="s_icon"><i class="icon_images"></i><span class="fa-check"></span></div>
 						<div class="s_info">
-							<h3>Well Documented</h3>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
-							<a href="#" class="tbutton small"><span>More Details</span></a>
+							<h3>Web &amp; Graphic Design</h3>
+							<p>Web Design with HTML5, CSS3, and Javascript with a focus on the end user experience.  Photo manipulation, enhancement, and logo design.</p>
+							<a href="http://www.studioquixotic.com" class="tbutton small"><span>More Details</span></a>
 						</div><!-- end info -->
 					</div><!-- end grid6 -->
 
 					<div class="grid_6 mbf">
-						<div class="s_icon"><i class="icon_box-checked"></i><span class="fa-check"></span></div>
+						<div class="s_icon"><i class="icon_key_alt"></i><span class="fa-check"></span></div>
 						<div class="s_info">
-							<h3>Unlimited Colors</h3>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
-							<a href="#" class="tbutton small"><span>More Details</span></a>
-						</div><!-- end info -->
-					</div><!-- end grid6 -->
-
-					<div class="grid_6">
-						<div class="s_icon"><i class="icon_easel"></i><span class="fa-check"></span></div>
-						<div class="s_info">
-							<h3>Seo Optimized</h3>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
-							<a href="#" class="tbutton small"><span>More Details</span></a>
-						</div><!-- end info -->
-					</div><!-- end grid6 -->
-
-					<div class="grid_6">
-						<div class="s_icon"><i class="icon_datareport"></i><span class="fa-check"></span></div>
-						<div class="s_info">
-							<h3>Unlimited Options</h3>
-							<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
-							<a href="#" class="tbutton small"><span>More Details</span></a>
+							<h3>Web App Development</h3>
+							<p>Full-stack web development with the LAMP stack.  Rich web apps powered by Laravel and MySQL.  Dynamic websites with jQuery and Angular.js.</p>
+							<a href="https://github.com/travtex" class="tbutton small"><span>More Details</span></a>
 						</div><!-- end info -->
 					</div><!-- end grid6 -->
 				</div><!-- end row -->
@@ -80,11 +62,11 @@
 				<div class="row clearfix">
 					<div class="grid_6 custom_block1" data-gen="bigEntrance">
 						<div class="inner_list">
-							<h3>- More Top Features from inCreate Template</h3>
+							<h3>- Some Recent Projects</h3>
 							<ul>
-								<li><a href="#custom_1"><i class="icon_box-checked"></i> Phasellus vehicula justo eget diam posuer</a></li>
-								<li><a href="#custom_2"><i class="icon_box-checked"></i> Eget diam posuere sollicitudin eu tincidunt nulla vehicula justo</a></li>
-								<li><a href="#custom_3"><i class="icon_box-checked"></i> Sollicitudin eu tincidunt nulla</a></li>
+								<li><a href="#custom_1"><i class="icon_box-checked"></i> Martial arts studio website (Squarespace)</a></li>
+								<li><a href="#custom_2"><i class="icon_box-checked"></i> Alient planet, designed in GIMP.</a></li>
+								<li><a href="#custom_3"><i class="icon_box-checked"></i> Gradient preview tool (With fun add-on feature)</a></li>
 								<li><a href="#custom_4"><i class="icon_box-checked"></i> Posuere sollicitudin eu tincidunt nulla loremo ipsum</a></li>
 								<li><a href="#custom_5"><i class="icon_box-checked"></i> Eget diam posuere sollicitudin eu tincidunt nulla</a></li>
 							</ul>
@@ -92,9 +74,9 @@
 					</div><!-- end grid6 -->
 
 					<div class="grid_6 custom_block1_img" data-gen="bigEntrance">
-						<div class="h_slider"><img class="custom_1" src="/img/assets/t3.png" alt="tablet"></div>
-						<div class="h_slider"><img class="custom_2" src="/img/assets/t2.png" alt="tablet"></div>
-						<div class="h_slider"><img class="custom_3" src="/img/assets/t1.png" alt="tablet"></div>
+						<div class="h_slider"><img class="custom_1 imaw_tx" src="http://studioquixotic.com/wp-content/uploads/2013/11/imaw_site.png" alt="imaw"></div>
+						<div class="h_slider"><img class="custom_2" src="http://studioquixotic.com/wp-content/uploads/2013/11/alienplanet1.png" alt="planet"></div>
+						<div class="h_slider"><img class="custom_3" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn1/v/t1.0-9/1009881_10203468297618443_1695424007_n.jpg?oh=5f098240d716fa577a8a73a0a6463f3a&oe=53960F8B&__gda__=1403534206_d7395bb128765215808418ef541d90cb" alt="tablet"></div>
 						<div class="h_slider"><img class="custom_4" src="/img/assets/t4.png" alt="tablet"></div>
 						<div class="h_slider"><img class="custom_5" src="/img/assets/t5.png" alt="tablet"></div>
 					</div><!-- end grid6 -->

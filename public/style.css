@@ -4583,3 +4583,7 @@ div.dark_rounded #pp_full_res .pp_inline,div.dark_square #pp_full_res .pp_inline
 /* Custom Stuff to Patchwork Fix Horribly Broken Theme I Bought on the Internet
    to 'Save Development Time'.  Why use bootstrap if you're going to break it?
 ----------------------------------------------------------------------------------------------------*/
+
+.imaw_tx {
+	padding-top: 40px;
+}
