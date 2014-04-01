@@ -74,10 +74,10 @@
 					</div><!-- end grid6 -->
 
 					<div class="grid_6 custom_block1_img" data-gen="bigEntrance">
-						<div class="h_slider"><img class="custom_1 imaw_tx" src="http://studioquixotic.com/wp-content/uploads/2013/11/imaw_site.png" alt="imaw"></div>
-						<div class="h_slider"><img class="custom_2" src="https://scontent-b.xx.fbcdn.net/hphotos-prn1/t1.0-9/10176098_10203470558034952_172032400_n.jpg" alt="blackjack"></div>
-						<div class="h_slider"><img class="custom_3" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn1/v/t1.0-9/1009881_10203468297618443_1695424007_n.jpg?oh=5f098240d716fa577a8a73a0a6463f3a&oe=53960F8B&__gda__=1403534206_d7395bb128765215808418ef541d90cb" alt="gradient"></div>
-						<div class="h_slider"><img class="custom_4" src="https://scontent-b.xx.fbcdn.net/hphotos-prn1/l/t1.0-9/1238715_10203470574675368_1067989605_n.jpg" alt="mole"></div>
+						<div class="h_slider"><a href="http://www.imawtexas.com/" class="custom_1" target="_blank"><img class="custom_1 imaw_tx" src="http://studioquixotic.com/wp-content/uploads/2013/11/imaw_site.png" alt="imaw"></a></div>
+						<div class="h_slider"><a href="http://www.studioquixotic.com/blackjack/blackjack-app.html" target="_blank" class="custom_2"><img class="custom_2" src="https://scontent-b.xx.fbcdn.net/hphotos-prn1/t1.0-9/10176098_10203470558034952_172032400_n.jpg" alt="blackjack"></a></div>
+						<div class="h_slider"><a href="http://jsfiddle.net/travtex/w65gJ/" target="_blank" class="custom_3"><img class="custom_3" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn1/v/t1.0-9/1009881_10203468297618443_1695424007_n.jpg?oh=5f098240d716fa577a8a73a0a6463f3a&oe=53960F8B&__gda__=1403534206_d7395bb128765215808418ef541d90cb" alt="gradient"></a></div>
+						<div class="h_slider"><a href="http://www.studioquixotic.com/blackjack/whack-a-mole.html" target="_blank" class="custom_4"><img class="custom_4" src="https://scontent-b.xx.fbcdn.net/hphotos-prn1/l/t1.0-9/1238715_10203470574675368_1067989605_n.jpg" alt="mole"></a></div>
 						<div class="h_slider"><img class="custom_5" src="https://scontent-a.xx.fbcdn.net/hphotos-prn2/t1.0-9/1467313_10203470585715644_1135056691_n.jpg" alt="simon"></div>
 					</div><!-- end grid6 -->
 				</div><!-- end row -->
