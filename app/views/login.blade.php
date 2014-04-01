@@ -32,9 +32,14 @@
 				<p> E-mail and Password are required. </p>
 					<div class="grid_9 alpha fll">
 						{{ Form::open(array('action' => 'HomeController@doLogin', 'class' => 'form-signin'))}}
-						<input name= "email" type="text" class="requiredField form-input" placeholder="E-mail *" required autofocus>
+						{{ Form::text('email', $value = null, $attributes = array (
+								'placeholder' => 'E-Mail *',
+								'class' => 'requiredField form-input',
+								'autofocus' => 'autofocus'))}}
 						<br />
-						<input name= "password" type="password" class="requiredField form-input" placeholder="Password *" required>
+						{{ Form::text('password', $value = null, $attributes = array (
+								'placeholder' => 'Title *',
+								'class' => 'requiredField form-input'))}}
 				<div class="clearfix">
 					<p><input type="submit" class="send-button" name="submit" value="Login"></p>
 						{{ Form::close()}}
