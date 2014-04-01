@@ -116,7 +116,7 @@
 										</div>
 									</li><!-- portfolio item -->
 									<li>
-										<img src="https://scontent-a.xx.fbcdn.net/hphotos-frc1/t1.0-9/10003920_10203463780425516_864460205_n.jpg" alt="wolf">
+										<img src="/img/assets/wolf.png" alt="wolf">
 										<div class="f_hover">
 											<div class="f_links">
 												<a class="tbutton small" href="https://scontent-a.xx.fbcdn.net/hphotos-frc1/t1.0-9/10003920_10203463780425516_864460205_n.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
@@ -126,7 +126,7 @@
 										</div>
 									</li><!-- portfolio item -->
 									<li>
-										<img src="http://studioquixotic.com/wp-content/uploads/2013/11/photo_retouch.jpg" alt="retouch">
+										<img src="/img/assets/retouch.png" alt="retouch">
 										<div class="f_hover">
 											<h5> <a href="#">Sed ut perspiciatis unde</a> </h5>
 										<div class="f_hover">
@@ -149,10 +149,10 @@
 										</div>
 									</li><!-- portfolio item -->
 									<li>
-										<img src="img/assets/portfolio6.jpg" alt="#">
+										<img src="img/assets/waves.png" alt="waves">
 										<div class="f_hover">
 											<div class="f_links">
-												<a class="tbutton small" href="/img/assets/portfolio6.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
+												<a class="tbutton small" href="https://scontent-a.xx.fbcdn.net/hphotos-frc3/t1.0-9/1526235_10203461703813602_1803695862_n.jpg" data-gal="lightbox[folio]"><span><i class="arrow_expand"></i></span></a>
 												<a class="tbutton small" href="portfolio_single.html"><span>More Details</span></a>
 											</div>
 											<h5> <a href="portfolio_single.html">Portfolio Project Title Here</a> </h5>
