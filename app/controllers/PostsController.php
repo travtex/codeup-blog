@@ -18,9 +18,25 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
+		if(Input::has('search')) {
+			$search = Input::get('search');
+			$posts = Post::where('title', 'LIKE', "%{$search}%")
+							->orWhere('body', 'LIKE', "%{$search}%")
+							->orderBy('title', 'asc')
+							->paginate(5);
+			return View::make('posts.index')->with('posts', $posts);
+		} else {
 		$posts = Post::orderBy('created_at', 'desc')->paginate(5);
 		return View::make('posts.index')->with('posts', $posts);
+		}
 	}
+
+	// public function searchPosts() 
+	// {
+	// 	$search = Input::get('search');
+	// 	$posts = Post::orderBy('title', 'LIKE', '%{search}%')->paginate(5);
+	// 	return View::make('posts.index')->with('posts', $posts);
+	// }
 
 	/**
 	 * Show the form for creating a new resource.

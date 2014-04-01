@@ -58,7 +58,7 @@
 
 			<div class="grid_3 sidebar">
 				<div class="widget">
-					<form action="search.html" id="searchwidget" method="get">
+					<form action="" id="searchwidget" method="get">
 						<input name="search" type="text" onfocus="if (this.value=='Start Searching...') this.value = '';" onblur="if (this.value=='') this.value = 'Start Searching...';" value="Start Searching..." placeholder="Start Searching ...">
 						<button type="submit"><i class="fa-search"></i></button>
 					</form><!-- end form -->
