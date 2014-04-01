@@ -90,34 +90,6 @@
               <ul class="sf-menu">
                 <li class="current"><a href="/">Home</a>
                 </li>
-                <li><a href="shop.html">Shop</a>
-                  <ul class="col3 mega">
-                    <li class="col1">
-                      <ol>
-                        <li><a href="shop.html">Shop</a></li>
-                        <li><a href="shop_sidebar_right.html">Right Sidebar</a></li>
-                        <li><a href="shop_sidebar_left.html">Left Sidebar</a></li>
-                        <li><a href="shop_sidebar_both.html">Both Sidebar</a></li>
-                        <li><a href="shop_sidebar_both_left.html">Both Side Left</a></li>
-                        <li><a href="shop_sidebar_both_right.html">Both Side Right</a></li>
-                        <li><a href="shop_masonry.html">Shop Masonry</a></li>
-                      </ol>
-                    </li>
-                    <li class="col1">
-                      <ol>
-                        <li><a href="shop_product.html">Shop Product</a></li>
-                        <li><a href="shop_bag.html">Shopping Bag</a></li>
-                        <li><a href="shop_track_your_order.html">Track Your Order</a></li>
-                        <li><a href="shop_checkout.html">Checkout → Pay</a></li>
-                        <li><a href="shop_login_register.html">Login / Register</a></li>
-                        <li><a href="shop_account.html">My Account</a></li>
-                      </ol>
-                    </li>
-                    <li class="col1 featured_Img">
-                      <a href="shop.html"><img src="{{ URL::asset('img/shop/megamenu.png') }}" alt="#" title="New Year Sales"></a>
-                    </li>
-                  </ul>
-                </li>
                 <li><a href="#">Pages</a>
                   <ul>
                     <li><a href="icons.html">700 Retina Icons</a></li>
@@ -187,7 +159,7 @@
                 </li>
                 <li><a href="contact.html">Contact</a></li>
                 @if (Auth::check())
-                <li><a href="{{{ action('HomeController@logout') }}}">Logout</a></li>
+                <li><a href="{{{ action('HomeController@logout') }}}">Logout ({{{ Auth::user()->email }}})</a></li>
                 @else
                 <li><a href="{{{ action('HomeController@showLogin') }}}">Login</a></li>
                 @endif
