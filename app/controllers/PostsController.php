@@ -20,13 +20,13 @@ class PostsController extends \BaseController {
 	{
 		if(Input::has('search')) {
 			$search = Input::get('search');
-			$posts = Post::where('title', 'LIKE', "%{$search}%")
+			$posts = Post::with('user')->where('title', 'LIKE', "%{$search}%")
 							->orWhere('body', 'LIKE', "%{$search}%")
 							->orderBy('title', 'asc')
 							->paginate(5);
 			return View::make('posts.index')->with('posts', $posts);
 		} else {
-		$posts = Post::orderBy('created_at', 'desc')->paginate(5);
+		$posts = Post::with('user')->orderBy('created_at', 'desc')->paginate(5);
 		return View::make('posts.index')->with('posts', $posts);
 		}
 	}
@@ -66,6 +66,7 @@ class PostsController extends \BaseController {
 		} else {
 
 			$post = new Post();
+			$post->user_id = 1;
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 
@@ -87,7 +88,7 @@ class PostsController extends \BaseController {
 	public function show($id)
 	{
 		// Show a post
-		$post = Post::findOrFail($id);
+		$post = Post::with('user')->findOrFail($id);
 		return View::make('posts.show')->with('post', $post);
 	}
 

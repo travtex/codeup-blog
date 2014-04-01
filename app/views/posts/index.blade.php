@@ -35,9 +35,8 @@
 						<div class="meta_box">
 							<h3> <a href="{{{ action('PostsController@show', $post->id)}}}">{{{$post->title}}}</a> </h3>
 							<div class="post_meta">
-								<span><i class="icon_profile"></i> <a href="#">Author</a></span>
+								<span><i class="icon_profile"></i> <a href="#">{{$post->user->email}}</a></span>
 								<span><i class="icon_clock_alt"></i> <a href="#"> {{$post->created_at->format('l, F jS Y @ h:i A')}} </a></span>
-								<span><i class="icon_link_alt"></i> in <a href="#">news</a>, <a href="#">photo</a>, <a href="#">3d</a></span>
 								<span class="post_comments"> <a href="#"><i class="icon_comment_alt"></i> 17</a></span>
 							</div><!-- meta -->
 						</div><!-- meta box -->
