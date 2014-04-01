@@ -4,7 +4,7 @@
 @section('topscript')
 <style>
 	.breadcrumb-place {
-		background: url(/img/assets/breadcrumb12.jpg) repeat center;
+		background: url(/img/assets/breadcrumb14.jpg) repeat center;
 	}
 </style>
 
@@ -15,12 +15,11 @@
 
 <div class="breadcrumb-place">
 	<div class="row clearfix">
-		<h3 class="page-title"> Edit Blog Post </h3>
+		<h3 class="page-title"> Login </h3>
 		<div class="breadcrumbIn">
 			<ul>
 				<li><a href="/"><i class="icon_house_alt mi"></i> Home </a></li>
-				<li><a href="/blog"> Blog </a></li>
-				<li>Edit Post</li>
+				<li>Login</li>
 			</ul>
 		</div><!-- breadcrumbIn -->
 	</div><!-- row -->
@@ -29,17 +28,20 @@
 <div class="page-content">
 		<div class="row clearfix">
 			<div class="grid_8 contact_c">
-				<h3 class="col-title"> Edit Post by {{$post->user->email}}</h3>
-				<p> Title and Body fields are required. </p>
-
-				{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
-					<div class="clearfix">
-						{{ $errors->first('title', '<h3 class=\'col-title\'>Must have a title.</h3>')}}
-							@include('posts.form')
-					<input type="submit" class="send-button" name="submit" value="Edit Post">
+				<h3 class="col-title"> Please Login </h3>
+				<p> E-mail and Password are required. </p>
+					<div class="grid_9 alpha fll">
+						{{ Form::open(array('action' => 'HomeController@doLogin', 'class' => 'form-signin'))}}
+						<input name= "email" type="text" class="requiredField form-input" placeholder="E-mail *" required autofocus>
+						<br />
+						<input name= "password" type="password" class="requiredField form-input" placeholder="Password *" required>
+						{{ Form::close()}}
+				<div class="clearfix">
+					<p><input type="submit" class="send-button" name="submit" value="Login"></p>
+				</div>
 					</div>
 					
-				{{Form::close()}}
+				
 			</div><!-- grid8 -->
 
 			<div class="grid_4 sidebar">

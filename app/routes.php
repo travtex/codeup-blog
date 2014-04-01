@@ -19,12 +19,15 @@
 
 Route::get('/', 'HomeController@showWelcome');
 
-Route::get('orm-test', function() {
-    // $post1 = new Post();
-    // $post1->title = "Third Seed";
-    // $post1->body = "A third post, because I'm looking at two and three-column layouts for the blog.";
-    // $post1->save();
-});
+Route::get('/login', 'HomeController@showLogin');
+Route::post('/login', 'HomeController@doLogin');
+
+// Route::get('orm-test', function() {
+//     $post1 = new Post();
+//     $post1->title = "Third Seed";
+//     $post1->body = "A third post, because I'm looking at two and three-column layouts for the blog.";
+//     $post1->save();
+// });
 
 Route::get('resume', 'HomeController@showResume');
 
