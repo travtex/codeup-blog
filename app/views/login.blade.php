@@ -35,9 +35,9 @@
 						<input name= "email" type="text" class="requiredField form-input" placeholder="E-mail *" required autofocus>
 						<br />
 						<input name= "password" type="password" class="requiredField form-input" placeholder="Password *" required>
-						{{ Form::close()}}
 				<div class="clearfix">
 					<p><input type="submit" class="send-button" name="submit" value="Login"></p>
+						{{ Form::close()}}
 				</div>
 					</div>
 					

@@ -186,6 +186,11 @@
                 <li><a href="/blog">Blog</a>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
+                @if (Auth::check())
+                <li><a href="{{{ action('HomeController@logout') }}}">Logout</a></li>
+                @else
+                <li><a href="{{{ action('HomeController@showLogin') }}}">Login</a></li>
+                @endif
               </ul><!-- end menu -->
             </nav><!-- end nav -->
           </div><!-- row -->

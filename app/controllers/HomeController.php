@@ -38,7 +38,21 @@ class HomeController extends BaseController {
 
 	public function doLogin()
 	{
-		return;
+		if (Auth::attempt(array('email' => Input::get('email'), 'password' => Input::get('password'))))
+		{
+		    return Redirect::intended('/blog');
+		}
+		else
+		{
+		    // login failed, go back to the login screen
+		    return Redirect::back()->withInput();
+		}
+	}
+
+	public function logout()
+	{
+		Auth::logout();
+		return Redirect::action('PostsController@index');
 	}
 	
 }
