@@ -32,14 +32,16 @@
 				<h3 class="col-title"> Create New Post </h3>
 				<p> Title and Body fields are required. </p>
 
-				{{ Form::model(new Post(), array('action' => 'PostsController@store')) }}
+				{{ Form::model(new Post(), array('action' => 'PostsController@store',
+												 'files' => true )) }}
 					<div class="clearfix">
 						{{ $errors->first('title', '<h3 class=\'col-title\'>Must have a title.</h3>')}}
 						@include('posts/form')
 					<input type="submit" class="send-button" name="submit" value="Create Post">
+					<span>Add Image to Post (Optional):</span><br/>
+					{{ Form::file('image', array('class' => 'send-button fll')) }}
+					{{ Form::close()}}
 					</div>
-					
-				{{Form::close()}}
 			</div><!-- grid8 -->
 
 			<div class="grid_4 sidebar">

@@ -57,6 +57,8 @@ class PostsController extends \BaseController {
 	public function store()
 	{
 		// Save to DB
+		//Log::info(Input::all());
+
 		$validator = Validator::make(Input::all(), Post::$rules);
 
 		if($validator->fails()) {
@@ -69,13 +71,19 @@ class PostsController extends \BaseController {
 			$post->user_id = Auth::user()->id;
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+			if (Input::hasFile('image')) {
+				$image = Input::file('image');
+				$destination = "uploads/";
+				$extension = $image->getClientOriginalExtension();
+				$filename = $image->getClientOriginalName();
+				$image->move($destination, $filename);
+				$post->image = "{$destination}" . "{$filename}";
+			}
 
 			$post->save();
 			Session::flash('successMessage', 'Post created successfully.');
 			return Redirect::action('PostsController@index');
 		}
-
-
 		//return Redirect::back()->withInput();
 	}
 
@@ -126,6 +134,14 @@ class PostsController extends \BaseController {
 
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+			if (Input::hasFile('image')) {
+				$image = Input::file('image');
+				$destination = "uploads/";
+				$extension = $image->getClientOriginalExtension();
+				$filename = $image->getClientOriginalName();
+				$image->move($destination, $filename);
+				$post->image = "{$destination}" . "{$filename}";
+			}
 
 			$post->save();
 			Session::flash('successMessage', 'Post edited successfully.');

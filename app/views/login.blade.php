@@ -37,8 +37,8 @@
 								'class' => 'requiredField form-input',
 								'autofocus' => 'autofocus'))}}
 						<br />
-						{{ Form::text('password', $value = null, $attributes = array (
-								'placeholder' => 'Title *',
+						{{ Form::password('password', array (
+								'placeholder' => 'Password *',
 								'class' => 'requiredField form-input'))}}
 				<div class="clearfix">
 					<p><input type="submit" class="send-button" name="submit" value="Login"></p>

@@ -78,7 +78,7 @@
 						<div class="h_slider"><a href="http://www.studioquixotic.com/blackjack/blackjack-app.html" target="_blank" class="custom_2"><img class="custom_2" src="https://scontent-b.xx.fbcdn.net/hphotos-prn1/t1.0-9/10176098_10203470558034952_172032400_n.jpg" alt="blackjack"></a></div>
 						<div class="h_slider"><a href="http://jsfiddle.net/travtex/w65gJ/" target="_blank" class="custom_3"><img class="custom_3" src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-prn1/v/t1.0-9/1009881_10203468297618443_1695424007_n.jpg?oh=5f098240d716fa577a8a73a0a6463f3a&oe=53960F8B&__gda__=1403534206_d7395bb128765215808418ef541d90cb" alt="gradient"></a></div>
 						<div class="h_slider"><a href="http://www.studioquixotic.com/blackjack/whack-a-mole.html" target="_blank" class="custom_4"><img class="custom_4" src="https://scontent-b.xx.fbcdn.net/hphotos-prn1/l/t1.0-9/1238715_10203470574675368_1067989605_n.jpg" alt="mole"></a></div>
-						<div class="h_slider"><img class="custom_5" src="https://scontent-a.xx.fbcdn.net/hphotos-prn2/t1.0-9/1467313_10203470585715644_1135056691_n.jpg" alt="simon"></div>
+						<div class="h_slider"><a href="http://www.studioquixotic.com/simon-says/" target="_blank" class="custom_5"><img class="custom_5" src="https://scontent-a.xx.fbcdn.net/hphotos-prn2/t1.0-9/1467313_10203470585715644_1135056691_n.jpg" alt="simon"></a></div>
 					</div><!-- end grid6 -->
 				</div><!-- end row -->
 			</div><!-- end grey line -->
@@ -88,7 +88,7 @@
 					<div class="intro_content">
 						<div class="inner">
 							<h3> Graphic Design </h3>
-							<p> Print this page to PDF for the complete set of vectors. Or to use on the desktop, install FontAwesome.otf and copy and paste .. <a href="portfolio4.html">View All</a></p>
+							<p> Digital design and photo enhancement via a combination of GIMP, Pixelmator, and Photoshop. <a href="portfolio4.html">View All</a></p>
 						</div>
 					</div>
 					<div class="f_items">
@@ -171,9 +171,9 @@
 			<div class="row clearfix mbs">
 				<div class="grid_6">
 					<ul class="tabs">
-						<li><a href="#A_1" class="active">Smart Options</a></li>
-						<li><a href="#A_2">RTL Support</a></li>
-						<li><a href="#A_3">Tons of Shortcodes</a></li>
+						<li><a href="#A_1" class="active">Client Side</a></li>
+						<li><a href="#A_2">Server Side</a></li>
+						<li><a href="#A_3">Graphic Design</a></li>
 					</ul><!-- tabs -->
 
 					<ul class="tabs-content">
@@ -190,7 +190,7 @@
 							<li class="sub-accordion">
 								<div class="accordion-head">
 									<div class="accordion-head-sign"></div>
-									<p>LEARN MORE ABOUT inCREATE</p>
+									<p>What is a full-stack developer?</p>
 								</div>
 								<div class="accordion-content">
 									Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris.
@@ -199,7 +199,7 @@
 							<li class="sub-accordion">
 								<div class="accordion-head">
 									<div class="accordion-head-sign"></div>
-									<p>ULTIMATE VERSION VERY FLEXIBLE</p>
+									<p>What services do you offer?</p>
 								</div>
 								<div class="accordion-content">Nulla id ligula arcu. Integer et tincidunt lectus. Duis id ligula diam, quis dapibus erat. Curabitur nec libero et est vulputate sollicitudin. Fusce sit amet turpis sed mauris volutpat posuere. Morbi vulputate, odio eget adipiscing faucibus, lorem ipsum facilisis justo, gravida tempus orci nisi ac eros. Pellentesque metus dolor, imperdiet sed ornare vel, tempus eu ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec malesuada, massa ut lacinia congue, eros felis aliquam arcu, non euismod ligula sapien in est. Etiam vitae congue orci.
 								</div>
@@ -207,7 +207,7 @@
 							<li class="sub-accordion">
 								<div class="accordion-head">
 									<div class="accordion-head-sign"></div>
-									<p>EASY CUSTOMIZATION AND CHANGE COLORS</p>
+									<p>How long does it take to build a website?</p>
 								</div>
 								<div class="accordion-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris.
 								</div>

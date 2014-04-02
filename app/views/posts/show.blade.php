@@ -30,7 +30,11 @@
 
 						<div class="post">
 							<div class="meta_box">
-								<div class="post_format"><i class="icon_pencil"></i></div>
+								@if(Auth::check())
+									@if (Auth::user()->id === $post->user_id || Auth::user()->is_admin)
+										<a href="{{{action('PostsController@edit', $post->id)}}}"><div class="post_format toptip" title="Edit Post"><i class="icon_pencil"></i></div></a>
+									@endif
+								@endif
 								<h3> <a href="">{{{ $post->title }}}</a> </h3>
 								<div class="post_meta">
 									<span><i class="icon_profile"></i> <a href="#">{{$post->user->email}}</a></span>
@@ -38,18 +42,22 @@
 									<span class="post_comments"> <a href="#"><i class="icon_comment_alt"></i> 17</a></span>
 								</div><!-- meta more -->
 							</div><!-- meta box -->
-							<div class="thumb_f"><a href="blog-single-image.html"><img src="/img/assets/post1.jpg" alt="#"></a></div>
+							<div class="thumb_f"><img src="/{{$post->image}}" alt="#"></div>
 							<div class="post_content">
 								<p>{{{ $post->body }}}</p>
 
 							</div>
-							<a href="{{{action('PostsController@edit', $post->id)}}}">Edit Link</a>
+							@if (Auth::check())
+								@if (Auth::user()->id === $post->user_id || Auth::user()->is_admin)
+								<a href="{{{action('PostsController@edit', $post->id)}}}" class="send-button fll">Edit Link</a>
 
-							{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'delete', 'id' => 'formDeletePost')) }}
-							{{ Form::close() }}
-							<a href="#" id="btnDeletePost">Delete Link</a>
+								{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'delete', 'id' => 'formDeletePost')) }}
+								{{ Form::close() }}
+								<a href="#" id="btnDeletePost" class="send-button fll">Delete Link</a>
+								@endif
+							@endif
 						</div><!-- post image -->
-
+						
 						<div class="post_share tac">
 							<div> Share with your friends: </div>
 							<div class="tws"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a></div>

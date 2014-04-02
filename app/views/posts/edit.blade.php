@@ -32,14 +32,15 @@
 				<h3 class="col-title"> Edit Post by {{$post->user->email}}</h3>
 				<p> Title and Body fields are required. </p>
 
-				{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT')) }}
+				{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'PUT', 'files' => true)) }}
 					<div class="clearfix">
 						{{ $errors->first('title', '<h3 class=\'col-title\'>Must have a title.</h3>')}}
 							@include('posts.form')
 					<input type="submit" class="send-button" name="submit" value="Edit Post">
-					</div>
-					
+					<span>Change Image for Post (Optional):</span><br/>
+				{{ Form::file('image', array('class' => 'send-button fll')) }}
 				{{Form::close()}}
+					</div>
 			</div><!-- grid8 -->
 
 			<div class="grid_4 sidebar">

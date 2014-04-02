@@ -30,7 +30,7 @@
 				
 				@foreach ($posts as $post)
 				<div class="post clearfix">
-					<div class="thumb_f"><a href="{{{action('PostsController@show', $post->id)}}}"><img src="img/assets/post_m1.jpg" alt="#"></a></div>
+					<div class="thumb_f"><a href="{{{action('PostsController@show', $post->id)}}}"><img src="/{{ $post->image }}" alt="#"></a></div>
 					<div class="content_half">
 						<div class="meta_box">
 							<h3> <a href="{{{ action('PostsController@show', $post->id)}}}">{{{$post->title}}}</a> </h3>
@@ -47,8 +47,9 @@
 				</div><!-- post image -->
 				@endforeach
 
-				<a href="{{{ action('PostsController@create')}}}">Create New Post</a>
-
+				@if (Auth::check())
+				<a href="{{{ action('PostsController@create')}}}" class="send-button">Create New Post</a>
+				@endif
 				<div class="pagination-tt clearfix">
 					{{ $posts->links() }}
 					
