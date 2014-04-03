@@ -37,7 +37,7 @@
 							<div class="post_meta">
 								<span><i class="icon_profile"></i> <a href="#">{{$post->user->first_name . " " . $post->user->last_name}}</a></span>
 								<span><i class="icon_clock_alt"></i> <a href="#"> {{$post->created_at->format('l, F jS Y @ h:i A')}} </a></span>
-								<span class="post_comments"> <a href="#"><i class="icon_comment_alt"></i> 17</a></span>
+								<span class="post_comments"> <i class="icon_comment_alt"></i> <a href="/blog/{{$post->id}}#disqus_thread"> </a></span>
 							</div><!-- meta -->
 						</div><!-- meta box -->
 						<div class="post_content">
@@ -152,5 +152,19 @@
 		</div><!-- row -->
 	</div><!-- end page content -->
 
+@stop
+@section('bottomscript')
+		<script type="text/javascript">
+			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+			var disqus_shortname = 'travflatt'; // required: replace example with your forum shortname
+
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			$(document).ready(function () {
+				var s = document.createElement('script'); s.async = true;
+				s.type = 'text/javascript';
+				s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+				(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+			}());
+		</script>
 @stop
 
