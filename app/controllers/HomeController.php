@@ -17,9 +17,20 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('hello');
-	}
 
+		if(Input::has('search')) {
+			$search = Input::get('search');
+			$posts = Post::with('user')->where('title', 'LIKE', "%{$search}%")
+							->orWhere('body', 'LIKE', "%{$search}%")
+							->orderBy('title', 'asc')
+							->paginate(5);
+			return View::make('hello')->with('posts', $posts);
+		} else {
+		$posts = Post::with('user')->orderBy('created_at', 'desc')->paginate(5);
+		return View::make('hello')->with('posts', $posts);
+		
+		}
+	}
 
 	public function showResume() 
 	{

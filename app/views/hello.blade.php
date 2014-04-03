@@ -220,50 +220,51 @@
 				<div class="grid_6">
 					<h3 class="block_title">Our Skills</h3>
 					<div class="progress-bar stripes">
-						<span rel="94"></span>
-						<div class="progress-bar-text">Themeforest - <span>94%</span></div>
+						<span rel="90"></span>
+						<div class="progress-bar-text">HTML5/CSS3 - <span>90%</span></div>
 					</div>
 					<div class="progress-bar stripes">
-						<span rel="81"></span>
-						<div class="progress-bar-text">Graphicriver - <span>81%</span></div>
+						<span rel="80"></span>
+						<div class="progress-bar-text">Javascript/jQuery - <span>80%</span></div>
 					</div>
 					<div class="progress-bar stripes">
-						<span rel="50"></span>
-						<div class="progress-bar-text">Photodune - <span>50%</span></div>
-					</div>
-					<div class="progress-bar stripes">
-						<span rel="68"></span>
-						<div class="progress-bar-text">Audiojungle - <span>68%</span></div>
+						<span rel="80"></span>
+						<div class="progress-bar-text">Pixelmator/Photoshop - <span>80%</span></div>
 					</div>
 					<div class="progress-bar stripes">
 						<span rel="70"></span>
-						<div class="progress-bar-text">Audiojungle - <span>68%</span></div>
+						<div class="progress-bar-text">PHP - <span>70%</span></div>
+					</div>
+					<div class="progress-bar stripes">
+						<span rel="65"></span>
+						<div class="progress-bar-text">Laravel - <span>65%</span></div>
 					</div>
 				</div><!-- end grid6 -->
 
 				<div class="grid_6">
+					@if(count($posts) > 0)
 					<h3 class="block_title">Blog Posts</h3>
 					<div class="grid_6 f_blog">
 						<div class="f_thumb">
-							<img src="img/assets/post_1.jpg" alt="#">
-							<div class="f_hover"><a href="blog_single.html"><i class="icon_link_alt"></i></a></div>
+							<img src="{{ $posts[0]->image }}" alt="#">
+							<div class="f_hover"><a href="/blog/{{$posts[0]->id}}"><i class="icon_link_alt"></i></a></div>
 						</div>
-						<h4> <a href="blog_single.html">Labore et dolore magnam aliquam quaerat</a> </h4>
-						<div class="f_meta"><span><i class="icon_profile mi"></i> Admin</span><span><i class="icon_clock_alt mi"></i> 27 October 2013</span></div>
+						<h4> <a href="/blog/{{$posts[0]->id}}">{{ Str::words($posts[0]->body, 5)}}</a> </h4>
+						<div class="f_meta"><span><i class="icon_profile mi"></i>{{$posts[0]->user->first_name . " " . $posts[0]->user->last_name}}</span><span><i class="icon_clock_alt mi"></i> {{$posts[0]->created_at->format('l, F jS Y @ h:i A')}}</span></div>
 					</div><!-- end post -->
-
+					@endif
+					@if(count($posts) > 1)
 					<div class="grid_6 f_blog">
 						<div class="f_thumb">
-							<div class="projectslider clearfix flexslider">
-								<ul class="slides">
-									<li><img src="/img/assets/post_3.jpg" alt="#"></li>
-									<li><img src="/img/assets/post_4.jpg" alt="#"></li>
-								</ul>
-							</div>
+							<img src="{{ $posts[1]->image }}" alt="#">
+							<div class="f_hover"><a href="/blog/{{$posts[1]->id}}"><i class="icon_link_alt"></i></a></div>
 						</div>
-						<h4> <a href="blog_single.html">Sed ut perspiciatis unde omnis iste natus</a> </h4>
-						<div class="f_meta"><span><i class="icon_profile mi"></i> Admin</span><span><i class="icon_clock_alt mi"></i> 30 November 2013</span></div>
+						<h4> <a href="/blog/{{$posts[0]->id}}">{{ Str::words($posts[1]->body, 5)}}</a> </h4>
+						<div class="f_meta"><span><i class="icon_profile mi"></i>{{$posts[1]->user->first_name . " " . $posts[1]->user->last_name}}</span><span><i class="icon_clock_alt mi"></i> {{$posts[1]->created_at->format('l, F jS Y @ h:i A')}}</span></div>
 					</div><!-- end post -->
+					@endif
+
+					
 				</div><!-- end grid6 -->
 			</div><!-- clearfix -->
 

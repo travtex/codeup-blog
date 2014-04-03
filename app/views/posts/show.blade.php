@@ -31,13 +31,13 @@
 						<div class="post">
 							<div class="meta_box">
 								@if(Auth::check())
-									@if (Auth::user()->id === $post->user_id || Auth::user()->is_admin)
+									@if (Auth::user()->is_admin || Auth::user()->id === $post->user_id)
 										<a href="{{{action('PostsController@edit', $post->id)}}}"><div class="post_format toptip" title="Edit Post"><i class="icon_pencil"></i></div></a>
 									@endif
 								@endif
 								<h3> <a href="">{{{ $post->title }}}</a> </h3>
 								<div class="post_meta">
-									<span><i class="icon_profile"></i> <a href="#">{{$post->user->email}}</a></span>
+									<span><i class="icon_profile"></i> <a href="#">{{$post->user->first_name . " " . $post->user->last_name}}</a></span>
 									<span><i class="icon_clock_alt"></i> <a href="#"> {{$post->created_at->format('l, F jS Y @ h:i A')}} </a></span>
 									<span class="post_comments"> <a href="#"><i class="icon_comment_alt"></i> 17</a></span>
 								</div><!-- meta more -->
@@ -48,7 +48,7 @@
 
 							</div>
 							@if (Auth::check())
-								@if (Auth::user()->id === $post->user_id || Auth::user()->is_admin)
+								@if (Auth::user()->is_admin || Auth::user()->id === $post->user_id)
 								<a href="{{{action('PostsController@edit', $post->id)}}}" class="send-button fll">Edit Link</a>
 
 								{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'delete', 'id' => 'formDeletePost')) }}

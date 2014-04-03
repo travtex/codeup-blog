@@ -67,6 +67,24 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 		$this->attributes['password'] = Hash::make($value);
 	}
 
-	
+	public function setFirstNameAttribute($value)
+	{
+		$this->attributes['first_name'] = strtolower($value);
+	}
+
+	public function setLastNameAttribute($value)
+	{
+		$this->attributes['last_name'] = strtolower($value);
+	}
+
+	public function getFirstNameAttribute()
+	{
+		return ucfirst($this->attributes['first_name']);
+	}
+
+	public function getLastNameAttribute()
+	{
+		return ucfirst($this->attributes['last_name']);
+	}
 
 }
