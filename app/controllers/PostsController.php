@@ -149,7 +149,7 @@ class PostsController extends \BaseController {
 	{
 		//
 		$post = Post::findOrFail($id);
-		File::delete('/' . $post->image);
+		File::delete($post->image);
 		$post->delete();
 
 		return Redirect::action('PostsController@index');
