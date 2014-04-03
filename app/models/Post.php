@@ -17,4 +17,16 @@ class Post extends BaseModel {
     'body' => 'required|max:10000'
 	);
 
+	public function assignImage($inputFile) {
+
+		
+		$destination = "uploads/";
+		$extension = $inputFile->getClientOriginalExtension();
+		// $filename = $image->getClientOriginalName();
+		$filename = uniqid() . '.' . $extension;
+		$inputFile->move($destination, $filename);
+		$this->attributes['image'] = "{$destination}" . "{$filename}";
+	
+	}
+
 }

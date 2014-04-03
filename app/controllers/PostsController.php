@@ -72,12 +72,7 @@ class PostsController extends \BaseController {
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 			if (Input::hasFile('image')) {
-				$image = Input::file('image');
-				$destination = "uploads/";
-				$extension = $image->getClientOriginalExtension();
-				$filename = $image->getClientOriginalName();
-				$image->move($destination, $filename);
-				$post->image = "{$destination}" . "{$filename}";
+				$post->assignImage(Input::file('image'));
 			}
 
 			$post->save();
@@ -135,12 +130,7 @@ class PostsController extends \BaseController {
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
 			if (Input::hasFile('image')) {
-				$image = Input::file('image');
-				$destination = "uploads/";
-				$extension = $image->getClientOriginalExtension();
-				$filename = $image->getClientOriginalName();
-				$image->move($destination, $filename);
-				$post->image = "{$destination}" . "{$filename}";
+				$post->assignImage(Input::file('image'));
 			}
 
 			$post->save();
@@ -159,6 +149,7 @@ class PostsController extends \BaseController {
 	{
 		//
 		$post = Post::findOrFail($id);
+		File::delete($post->image);
 		$post->delete();
 
 		return Redirect::action('PostsController@index');
