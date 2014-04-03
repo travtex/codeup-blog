@@ -150,6 +150,7 @@
 			</div><!-- sidebar -->
 
 		</div><!-- row -->
+		
 	</div><!-- end page content -->
 
 @stop

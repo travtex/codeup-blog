@@ -110,7 +110,7 @@
 						<div class="widget widget_social">
 							<ul>
 								<li><a class="fb" href="http://www.facebook.com/theme20"><span>25602 Likes</span><i class="social_facebook"></i></a></li>
-								<li><a class="tw" href="http://www.twitter.com/behzadg1"><span>15748 Followers</span><i class="social_twitter"></i></a></li>
+								<li><a href="https://twitter.com/StudioQuixotic" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @StudioQuixotic</a></a></li>
 							</ul>
 						</div><!-- widget social -->
 	
@@ -214,5 +214,6 @@ $('#btnDeletePost').on('click', function(e) {
 });
 
 </script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 @stop
