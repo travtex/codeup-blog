@@ -60,6 +60,13 @@ Route::filter('guest', function()
 	if (Auth::check()) return Redirect::to('/');
 });
 
+Route::filter('role', function()
+{
+
+	$post = Post::find(Request::segment(2));
+
+	if (!Auth::user()->canManage($post)) return Redirect::action('PostsController@show', $post->id);
+});
 /*
 |--------------------------------------------------------------------------
 | CSRF Protection Filter

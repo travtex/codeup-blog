@@ -31,7 +31,7 @@
 						<div class="post">
 							<div class="meta_box">
 								@if(Auth::check())
-									@if (Auth::user()->is_admin || Auth::user()->id === $post->user_id)
+									@if (Auth::user()->canManage($post))
 										<a href="{{{action('PostsController@edit', $post->id)}}}"><div class="post_format toptip" title="Edit Post"><i class="icon_pencil"></i></div></a>
 									@endif
 								@endif
@@ -48,7 +48,7 @@
 
 							</div>
 							@if (Auth::check())
-								@if (Auth::user()->is_admin || Auth::user()->id === $post->user_id)
+								@if (Auth::user()->canManage($post))
 								<a href="{{{action('PostsController@edit', $post->id)}}}" class="send-button fll">Edit Link</a>
 
 								{{ Form::model($post, array('action' => array('PostsController@update', $post->id), 'method' => 'delete', 'id' => 'formDeletePost')) }}

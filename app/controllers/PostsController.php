@@ -9,6 +9,7 @@ class PostsController extends \BaseController {
 
 		// Run an auth filter before all methods except index and show
 		$this->beforeFilter('auth', ['except' => ['index', 'show']]);
+		$this->beforeFilter('role', ['only' => ['edit', 'destroy']]);
 	}
 
 	/**

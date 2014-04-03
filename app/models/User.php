@@ -87,4 +87,9 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 		return ucfirst($this->attributes['last_name']);
 	}
 
+	public function canManage($post)
+	{
+		return $this->is_admin || $this->id == $post->user_id;
+	}
+
 }
