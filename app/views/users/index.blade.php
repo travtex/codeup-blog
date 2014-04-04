@@ -53,7 +53,7 @@
 					</tbody>
 				</table>
 
-				@if (Auth::check())
+				@if (Auth::check() && Auth::user()->is_admin)
 				<a href="{{{ action('UsersController@create')}}}" class="send-button">Create New User</a>
 				@endif
 				<div class="pagination-tt clearfix">

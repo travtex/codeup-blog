@@ -58,7 +58,7 @@
 						</div>
 						<div class="grid_12 alpha fll">
 					    {{ $errors->first('password', '<h3 class=\'col-title\'>Must Have a Password.</h3>')}}
-					    {{ Form::password('password', $value = null, $attributes = array (
+					    {{ Form::password('password', array (
 							'placeholder' => 'Password *',
 							'class' => 'requiredField form-input'
 					    ))}}
