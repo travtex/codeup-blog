@@ -26,13 +26,32 @@
 <div class="page-content">
 
 		<div class="row clearfix mbs">
-			<div class="grid_9 posts m_thumbnails s_thumbnails">
-				
-				@foreach ($users as $user)
-				<div class="post clearfix">
-					<p>{{$user->first_name}}
-				</div><!-- post image -->
-				@endforeach
+			<div class="grid_9 alpha">
+				<h3 class="col-title mb">Users</h3>
+				<table class="table">
+					<thead>
+						<tr>
+							<th scope="col">E-Mail</th>
+							<th scope="col">Name</th>
+							<th scope="col">Admin</th>
+							<th scope="col">Edit</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach ($users as $user)
+							<tr>
+								<td>{{$user->email}}</td>
+								<td>{{$user->first_name . ' ' . $user->last_name}}</td>
+								@if($user->is_admin)
+									<td>Yes</td>
+								@else
+									<td>No</td>
+								@endif
+								<td><a href="{{{ action('UsersController@edit', $user->id)}}}"><i class="fa-pencil-square-o fa-2"></i></a></td>
+							</tr>
+						@endforeach
+					</tbody>
+				</table>
 
 				@if (Auth::check())
 				<a href="{{{ action('UsersController@create')}}}" class="send-button">Create New User</a>
