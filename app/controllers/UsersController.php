@@ -29,7 +29,7 @@ class UsersController extends \BaseController {
 							->paginate(8);
 			return View::make('users.index')->with('users', $users);
 		} else {
-			$users = User::all()->paginate(8);
+			$users = User::orderBy('first_name', 'asc')->paginate(8);
 			return View::make('users.index')->with('users', $users);
 		}
 	}
