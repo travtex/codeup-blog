@@ -177,11 +177,21 @@
 					</ul><!-- tabs -->
 
 					<ul class="tabs-content">
-						<li id="A_1" class="active"><img src="/img/assets/character.jpg" alt="" class="fll">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor. </li><!-- tab content -->
+						<li id="A_1" class="active"><img src="/img/assets/www-mouse.jpg" style="max-width:250px;" alt="" class="fll">
+							In the WWW world, the client is referring to your web browser.  Technologies associated 
+							with the client-side in this context include <a href="http://en.wikipedia.org/wiki/Html" target="_blank">HTML</a>, 
+							<a href="http://en.wikipedia.org/wiki/Css" target="_blank">CSS</a>, and <a href="http://en.wikipedia.org/wiki/Javascript" target="_blank">JavaScript</a>.
+							<br /><br />Most of my experience resides in this area, referred to as 'Front-End' 
+							development.  Even when working on the server side, my focus is on the client.  
+							In my web development philosophy, <a href="http://en.wikipedia.org/wiki/User_experience" target="_blank">UX</a> 
+							(User Experience) is everything.  That doesn't just mean looking pretty.  Poor 
+							security?  Bad user experience when your website gives the entire internet your 
+							home address.  DB problems?  Losing your shipping information is a bad user 
+							experience.</li><!-- tab content -->
 
-						<li id="A_2"><p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget...</p><p>"Nulla sagittis porttitor varius. Vestibulum eleifend, lorem sit amet gravida accumsan, nisi est tempor risus, non suscipit lectus nunc sit amet nunc. Pellentesque iaculis sapien at lacus vulputate sodales et eget quam. Etiam tristique bibendum leo, quis sagittis urna tempus non. Aliquam aliquet, nibh nec placerat tempus, tellus neque accumsan justo,consectetur lorem fringilla vel. Nulla facilisi."</p></li><!-- tab content -->
+						<li id="A_2"><img src="/img/assets/php-mouse.jpg" style="max-width:250px;" alt="" class="fll">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget...</p><p>"Nulla sagittis porttitor varius. Vestibulum eleifend, lorem sit amet gravida accumsan, nisi est tempor risus, non suscipit lectus nunc sit amet nunc. Pellentesque iaculis sapien at lacus vulputate sodales et eget quam. Etiam tristique bibendum leo, quis sagittis urna tempus non. Aliquam aliquet, nibh nec placerat tempus, tellus neque accumsan justo,consectetur lorem fringilla vel. Nulla facilisi."</li><!-- tab content -->
 
-						<li id="A_3">Nulla sagittis porttitor varius. Vestibulum eleifend, lorem sit amet gravida accumsan, nisi est tempor risus, non suscipit lectus nunc sit amet nunc. Pellentesque iaculis sapien at lacus vulputate sodales et eget quam. Etiam tristique bibendum leo, quis sagittis urna tempus non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor.</li><!-- tab content -->
+						<li id="A_3"><img src="/img/assets/designer.jpg" style="max-width:250px;" alt="" class="fll">Nulla sagittis porttitor varius. Vestibulum eleifend, lorem sit amet gravida accumsan, nisi est tempor risus, non suscipit lectus nunc sit amet nunc. Pellentesque iaculis sapien at lacus vulputate sodales et eget quam. Etiam tristique bibendum leo, quis sagittis urna tempus non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor.</li><!-- tab content -->
 					</ul><!-- end tabs -->
 				</div><!-- end grid6 -->
 
@@ -296,17 +306,7 @@
 				</div><!-- end row -->
 			</div><!-- end parallax testimonials -->
 
-			<div class="row clearfix mbs" data-gen="bigEntrance">
-				<div class="tac"><h3 class="block_title">Clients We’ve Worked With So Far</h3><span class="after_line"></span></div>
-				<ul>
-					<li class="grid_2"><a href="#"><img src="/img/assets/logo1.jpg" alt="#" class="toptip" title="Logo name here"></a></li><!-- logo -->
-					<li class="grid_2"><a href="#"><img src="/img/assets/logo2.jpg" alt="#" class="toptip" title="Logo name here"></a></li><!-- logo -->
-					<li class="grid_2"><a href="#"><img src="/img/assets/logo3.jpg" alt="#" class="toptip" title="Logo name here"></a></li><!-- logo -->
-					<li class="grid_2"><a href="#"><img src="/img/assets/logo4.jpg" alt="#" class="toptip" title="Logo name here"></a></li><!-- logo -->
-					<li class="grid_2"><a href="#"><img src="/img/assets/logo5.jpg" alt="#" class="toptip" title="Logo name here"></a></li><!-- logo -->
-					<li class="grid_2"><a href="#"><img src="/img/assets/logo6.jpg" alt="#" class="toptip" title="Logo name here"></a></li><!-- logo -->
-				</ul>
-			</div><!-- end row -->
+			
 		</div><!-- end page content -->
 
 		

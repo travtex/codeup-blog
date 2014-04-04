@@ -26,6 +26,11 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 
 	}
 
+	public static $rules = array(
+	    'email' => 'required|max:100',
+	    'password' => 'required|max:100'
+	);
+
 	/**
 	 * Get the unique identifier for the user.
 	 *
@@ -54,12 +59,6 @@ class User extends BaseModel implements UserInterface, RemindableInterface {
 	public function getReminderEmail()
 	{
 		return $this->email;
-	}
-
-	// Set username to lower case on save
-	public function setUsernameAttribute($value) 
-	{
-		$this->attributes['username'] = strtolower($value);
 	}
 
 	public function setPasswordAttribute($value) 

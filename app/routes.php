@@ -36,3 +36,5 @@ Route::get('portfolio', 'HomeController@showPortfolio');
 
 Route::resource('blog', 'PostsController');
 
+Route::resource('users', 'UsersController');
+
