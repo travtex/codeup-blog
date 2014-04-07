@@ -189,9 +189,21 @@
 							home address.  DB problems?  Losing your shipping information is a bad user 
 							experience.</li><!-- tab content -->
 
-						<li id="A_2"><img src="/img/assets/php-mouse.jpg" style="max-width:250px;" alt="" class="fll">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget...</p><p>"Nulla sagittis porttitor varius. Vestibulum eleifend, lorem sit amet gravida accumsan, nisi est tempor risus, non suscipit lectus nunc sit amet nunc. Pellentesque iaculis sapien at lacus vulputate sodales et eget quam. Etiam tristique bibendum leo, quis sagittis urna tempus non. Aliquam aliquet, nibh nec placerat tempus, tellus neque accumsan justo,consectetur lorem fringilla vel. Nulla facilisi."</li><!-- tab content -->
+						<li id="A_2"><img src="/img/assets/php-mouse.jpg" style="max-width:250px;" alt="" class="fll">
+							Server-side technologies refer to those that reside on a web server and 
+							generate the content ultimately rendered on the browser.  Examples of server-side 
+							programming languages include <a href="http://en.wikipedia.org/wiki/PHP">PHP</a>, 
+							<a href="http://en.wikipedia.org/wiki/Ruby_(programming_language)">Ruby</a>, <a href="http://en.wikipedia.org/wiki/Asp.net">
+							ASP.NET</a>, and <a href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a><br /><br />I primarily work in PHP on the server, 
+							paired with MySQL databases to store, sort, and process and provide data to web applications.  
+							This site is powered by the <a href="http://en.wikipedia.org/wiki/Laravel">Laravel</a> framework, written in PHP.</li><!-- tab content -->
 
-						<li id="A_3"><img src="/img/assets/designer.jpg" style="max-width:250px;" alt="" class="fll">Nulla sagittis porttitor varius. Vestibulum eleifend, lorem sit amet gravida accumsan, nisi est tempor risus, non suscipit lectus nunc sit amet nunc. Pellentesque iaculis sapien at lacus vulputate sodales et eget quam. Etiam tristique bibendum leo, quis sagittis urna tempus non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor.</li><!-- tab content -->
+						<li id="A_3"><img src="/img/assets/designer.jpg" style="max-width:250px;" alt="" class="fll">
+							To a large extent, the internet is a visual medium.  Graphic Design is a broad category, covering everything 
+							from typography to photo enhancement to purely digital artwork.  Some of the software I've worked with 
+							for graphic design purposes include <a href="http://en.wikipedia.org/wiki/GIMP">GIMP</a>, 
+							<a href="http://en.wikipedia.org/wiki/Pixelmator">Pixelmator</a>, and the omnipresent 
+							<a href="http://en.wikipedia.org/wiki/Photoshop">Adobe Photoshop</a>.</li><!-- tab content -->
 					</ul><!-- end tabs -->
 				</div><!-- end grid6 -->
 
@@ -203,7 +215,11 @@
 									<p>What is a full-stack developer?</p>
 								</div>
 								<div class="accordion-content">
-									Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris.
+									Developers familiar with the entire technology stack they're working with, in short.  This includes 
+									client and server side programming, data modeling, and the hosting environment.  While it's difficult 
+									to be an expert in every aspect of web development, experience with all of the working parts can absolutely 
+									make a development team's lives easier by way of a granting the capacity to anticipate the needs of various parts of the 
+									application.  
 								</div>
 							</li>
 							<li class="sub-accordion">
@@ -211,7 +227,11 @@
 									<div class="accordion-head-sign"></div>
 									<p>What services do you offer?</p>
 								</div>
-								<div class="accordion-content">Nulla id ligula arcu. Integer et tincidunt lectus. Duis id ligula diam, quis dapibus erat. Curabitur nec libero et est vulputate sollicitudin. Fusce sit amet turpis sed mauris volutpat posuere. Morbi vulputate, odio eget adipiscing faucibus, lorem ipsum facilisis justo, gravida tempus orci nisi ac eros. Pellentesque metus dolor, imperdiet sed ornare vel, tempus eu ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec malesuada, massa ut lacinia congue, eros felis aliquam arcu, non euismod ligula sapien in est. Etiam vitae congue orci.
+								<div class="accordion-content">
+									Web &amp; Graphic Design and Web Development.  I can create anything from a single page 
+									web brochure to a fully-featured web application with user authentication and database.  I can 
+									provide stock photography, original photography, and original digital design depending on your 
+									project's requirements.
 								</div>
 							</li>
 							<li class="sub-accordion">
@@ -219,7 +239,9 @@
 									<div class="accordion-head-sign"></div>
 									<p>How long does it take to build a website?</p>
 								</div>
-								<div class="accordion-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed consequat, quam id ultricies mollis, quam odio viverra nisi, vulputate fringilla risus leo ac ante. In eleifend sem eu turpis viverra quis interdum dolor tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem dui, molestie vitae ornare tincidunt, semper non metus. Ut id arcu leo, id feugiat mauris.
+								<div class="accordion-content">
+									It varies wildly.  A simple online business card can be put together in an afternoon.  A 
+									rich web application can take weeks or longer.
 								</div>
 							</li>
 						</ul><!-- end accordion -->
@@ -283,25 +305,25 @@
 					<div class="custom_block2" data-gen="bigEntrance">
 						<div class="inner_list">
 							<ul>
-								<li><a href="#t_1"><img src="/img/assets/avatar1.jpg" alt=""></a></li>
-								<li><a href="#t_2"><img src="/img/assets/avatar2.jpg" alt=""></a></li>
-								<li><a href="#t_3"><img src="/img/assets/avatar3.jpg" alt=""></a></li>
-								<li><a href="#t_4"><img src="/img/assets/avatar4.jpg" alt=""></a></li>
-								<li><a href="#t_5"><img src="/img/assets/avatar5.jpg" alt=""></a></li>
-								<li><a href="#t_6"><img src="/img/assets/avatar6.jpg" alt=""></a></li>
-								<li><a href="#t_7"><img src="/img/assets/avatar7.jpg" alt=""></a></li>
+								<li><a href="#t_1"><img src="/img/ivy-pup.jpg" style="height:80px; width:80px;" alt=""></a></li>
+								<li><a href="#t_2"><img src="/img/face1.jpg" style="height:80px; width:80px;" alt=""></a></li>
+								<li><a href="#t_3"><img src="/img/grincat.jpg" style="height:80px; width:80px;" alt=""></a></li>
+								<li><a href="#t_4"><img src="/img/face9.jpg" style="height:80px; width:80px;" alt=""></a></li>
+								<li><a href="#t_5"><img src="/img/weird-trav.jpg" style="height:80px; width:80px;" alt=""></a></li>
+								<li><a href="#t_6"><img src="/img/face8.jpg" style="height:80px; width:80px;" alt=""></a></li>
+								<li><a href="#t_7"><img src="/img/Dafoe01.jpg" style="height:80px; width:80px;" alt=""></a></li>
 							</ul>
 						</div><!-- end inner -->
 					</div><!-- end -->
 					
 					<div class="custom_block2_testimonial" data-gen="bigEntrance">
-						<div class="h_slider"><span class="t_1"><i class="icon_quotations"></i> Dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt <i class="icon_quotations"></i> <small> - Anna Rabinson </small></span></div>
-						<div class="h_slider"><span class="t_2"><i class="icon_quotations"></i> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley. <i class="icon_quotations"></i> <small> - Jennifer Raya </small></span></div>
-						<div class="h_slider"><span class="t_3"><i class="icon_quotations"></i> Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum maker including versions of Lorem Ipsum. <i class="icon_quotations"></i> <small> - Nicolas Cool </small></span></div>
-						<div class="h_slider"><span class="t_4"><i class="icon_quotations"></i> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letter. <i class="icon_quotations"></i> <small> - Ryan Giggs </small></span></div>
-						<div class="h_slider"><span class="t_5"><i class="icon_quotations"></i> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. <i class="icon_quotations"></i> <small> - Victoria Hins </small></span></div>
-						<div class="h_slider"><span class="t_6"><i class="icon_quotations"></i> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden. <i class="icon_quotations"></i> <small> - Annie Maria </small></span></div>
-						<div class="h_slider"><span class="t_7"><i class="icon_quotations"></i> Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable. <i class="icon_quotations"></i> <small> - Victor Zack </small></span></div>
+						<div class="h_slider"><span class="t_1"><i class="icon_quotations"></i> If I'm going to be 'too' anything, 'too cute' is fine. I love puppies. So what? Who hates puppies? <i class="icon_quotations"></i> <small> - Zooey Deschanel </small></span></div>
+						<div class="h_slider"><span class="t_2"><i class="icon_quotations"></i> I believe the process of going from confusion to understanding is a precious, even emotional, experience that can be the foundation of self-confidence. <i class="icon_quotations"></i> <small> - Brian Greene </small></span></div>
+						<div class="h_slider"><span class="t_3"><i class="icon_quotations"></i> If beauty isn't genius it usually signals at least a high level of animal cunning. <i class="icon_quotations"></i> <small> - Peter York </small></span></div>
+						<div class="h_slider"><span class="t_4"><i class="icon_quotations"></i> Nothing gives one person so much advantage over another as to remain always cool and unruffled under all circumstances. <i class="icon_quotations"></i> <small> - Thomas Jefferson </small></span></div>
+						<div class="h_slider"><span class="t_5"><i class="icon_quotations"></i> Every minute of every hour of every day you are making the world, just as you are making yourself, and you might as well do it with generosity and kindness and style. <i class="icon_quotations"></i> <small> - Rebecca Solnit </small></span></div>
+						<div class="h_slider"><span class="t_6"><i class="icon_quotations"></i> Laughter and tears are both responses to frustration and exhaustion. I myself prefer to laugh, since there is less cleaning up to do afterward. <i class="icon_quotations"></i> <small> - Kurt Vonnegut </small></span></div>
+						<div class="h_slider"><span class="t_7"><i class="icon_quotations"></i> Drawing is the honesty of the art. There is no possibility of cheating. It is either good or bad. <i class="icon_quotations"></i> <small> - Salvador Dali </small></span></div>
 					</div><!-- end -->
 				</div><!-- end row -->
 			</div><!-- end parallax testimonials -->
