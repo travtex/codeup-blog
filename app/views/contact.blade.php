@@ -13,7 +13,7 @@
 
 <div class="breadcrumb-place">
 	<div class="row clearfix">
-		<h3 class="page-title"> Edit User Info </h3>
+		<h3 class="page-title"> Contact Trav </h3>
 		<div class="breadcrumbIn">
 			<ul>
 				<li><a href="/"><i class="icon_house_alt mi"></i> Home </a></li>
